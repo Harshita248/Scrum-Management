@@ -2,8 +2,7 @@
 ## Brief:
 This is a project based on the platform of web designing which will be a website developed for amateurs and will also help people entering into codex that will make their tasks easier...
 
-
-![Title](https://raw.github.com/RallyApps/Kanban/master/screenshots/title-screenshot.png)
+![trello-sample-board](https://user-images.githubusercontent.com/46245859/66678707-1d233780-ec8a-11e9-9324-a63aadb3a6b0.jpg)
 
 ## Overview
 
