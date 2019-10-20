@@ -26,8 +26,12 @@
                     <div class="title">
                         <h3>Unchecked</h3>
                     </div>
+                    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+                    <button class="icon-button"><span class="glyphicon glyphicon-plus-sign"></span></button>
                     <ul style="padding-left: 0px;">
                         <div class="card1 row">
+                            <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+                    <button class="icon-button"><span class="glyphicon glyphicon-plus-sign"></span></button>
 
                             <li>
                                 <form align="center" >
@@ -35,7 +39,7 @@
                                     <input type="text" id="branch" required placeholder="Branch" pattern="[A-Za-z]{3-20}" title="Branch must be defined with Uppercase and lowercase characters only">
                                     <input type="text" id="Sem" required placeholder="Semester" pattern="[1-7]{1}" title="Semester must be a digit between 1 to 7">
                                     <input type="text" id="sec" required placeholder="Section" pattern="[A-Z]{1}" title="Section must be a Uppercase character">
-                                    <input type="text" id="email" required placeholder="Email">
+                                    <input type="text" id="email" required placeholder="Email" pattern="[@A-Za-z]{4-30}" title="Email must follow the pattern xyz@example.com">
                                     <input type="text" id="num" required placeholder="Mobile No" pattern="[0-9]{10}" title="Mobile number must be a 10 digited number">
                                     <input type="text" id="git" required placeholder="Github link" pattern="https?://github.com/.+" title="Github link must follow the pattern http://github.com/">
                                     <button class="submitBtn" type="submit" onsubmit="validate()">Submit</button>
@@ -52,6 +56,21 @@
                     </ul>
                 </div>
             </div>
+            <div class="col-sm-3">
+
+
+
+                <div class="second card">
+                    <div class="title">
+                        <h3>In Progress</h3>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
             <div class="col-sm-3">
 
 
@@ -89,6 +108,20 @@
                 <div class="second card">
                     <div class="title">
                         <h3>Unassigned</h3>
+                    </div>
+
+                </div>
+
+            </div>
+             </div>
+
+            <div class="col-sm-3">
+
+
+
+                <div class="second card">
+                    <div class="title">
+                        <h3>Members</h3>
                     </div>
 
                 </div>
