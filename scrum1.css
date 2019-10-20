@@ -24,7 +24,34 @@ body{
     border: 2px solid white;
     overflow: auto;
 }
-
+.third {
+    /*            width: 250px;*/
+    height: 550px;
+    background-color: currentColor;
+    border: 2px solid white;
+    overflow: auto;
+}
+.fourth {
+    /*            width: 250px;*/
+    height: 550px;
+    background-color: currentColor;
+    border: 2px solid white;
+    overflow: auto;
+}
+.fifth {
+    /*            width: 250px;*/
+    height: 550px;
+    background-color: currentColor;
+    border: 2px solid white;
+    overflow: auto;
+}
+.sixth {
+    /*            width: 250px;*/
+    height: 550px;
+    background-color: currentColor;
+    border: 2px solid white;
+    overflow: auto;
+}
 .card {
     /*    width: 20%;*/
     /*    display: inline-block;*/
