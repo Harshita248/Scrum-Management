@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="../css/scrum1.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-3">
+
+
+
+                <!--div id="first"-->
+                <div class="first card">
+                    <div class="title">
+                        <h3>Unchecked</h3>
+                    </div>
+                    <ul style="padding-left: 0px;">
+                        <div class="card1 row">
+
+                            <li>
+                                <form align="center" >
+                                    <input type="text" id="name" required placeholder="Name" pattern="[A-Za-z]{6,20}" title="Username must be defined with uppercase and lowercase characters only">
+                                    <input type="text" id="branch" required placeholder="Branch" pattern="[A-Za-z]{3-20}" title="Branch must be defined with Uppercase and lowercase characters only">
+                                    <input type="text" id="Sem" required placeholder="Semester" pattern="[1-7]{1}" title="Semester must be a digit between 1 to 7">
+                                    <input type="text" id="sec" required placeholder="Section" pattern="[A-Z]{1}" title="Section must be a Uppercase character">
+                                    <input type="text" id="email" required placeholder="Email">
+                                    <input type="text" id="num" required placeholder="Mobile No" pattern="[0-9]{10}" title="Mobile number must be a 10 digited number">
+                                    <input type="text" id="git" required placeholder="Github link" pattern="https?://github.com/.+" title="Github link must follow the pattern http://github.com/">
+                                    <button class="submitBtn" type="submit" onsubmit="validate()">Submit</button>
+
+                                </form>
+
+                            </li>
+                        </div>
+
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+
+
+
+                <div class="second card">
+                    <div class="title">
+                        <h3>Checked</h3>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-sm-3">
+
+
+
+                <div class="second card">
+                    <div class="title">
+                        <h3>Assigned</h3>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-sm-3">
+
+
+
+                <div class="second card">
+                    <div class="title">
+                        <h3>Unassigned</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        function validate() {
+            alert("Thank You for fiiling this form. We will get back to you soon.")
+            var n = document.getElementById("name");
+            //            var regx1 = /^[A-Za-z .]{3,20}$/;
+            //            if (n.value.match(' *')) {
+            //                alert("Invalid Name");
+            //            }
+            //            if (regx1.test(n.value)) {
+            //                alert("correct");
+            //            }
+
+            var b = document.getElementById("branch");
+            //            if (b.value.match(' *')) {
+            //                alert("Invalid Branch");
+            //            }
+            var sem = document.getElementById("Sem");
+            //            if (!sem.value.match(' *')) {
+            //                alert("Invalid Sem");
+            //            }
+            var secn = document.getElementById("sec");
+            //            if (!secn.value.match(' *')) {
+            //                alert("Invalid Section");
+            //            }
+            var e = document.getElementById("email");
+            //            if (!e.value.match(' *')) {
+            //                alert("Invalid Email address");
+            //            }
+            var no = document.getElementById("num");
+
+            //            if (!no.value.match(' *')) {
+            //                alert("Invalid Mobile number");
+            //            }
+
+            var git = document.getElementById("git");
+            //            if (!git.value.match(' *')) {
+            //                alert("Invalid Github link");
+            //            }
+            //           
+    </script>
+
+</body></html>
