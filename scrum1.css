@@ -52,3 +52,11 @@ button:hover{
   transition: .5s;
   
 }
+.icon-button {
+          float:right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: 0;
+    background-color:whitesmoke;
+        }
