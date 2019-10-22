@@ -143,8 +143,17 @@
 
 
     <script type="text/javascript">
+        //Prevent Enter key from submitting the form
+        function stopRKey(evt) {
+          var evt = (evt) ? evt : ((event) ? event : null);
+          var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+          if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+        }
+        document.onkeypress = stopRKey;
+        
+        //Alert message on successfully filling the form.
         function validate() {
-            alert("Thank You for fiiling this form. We will get back to you soon.");
+            alert("Thank You for filling this form. We will get back to you soon.");
             var n = document.getElementById("name");
             //            var regx1 = /^[A-Za-z .]{3,20}$/;
             //            if (n.value.match(' *')) {
