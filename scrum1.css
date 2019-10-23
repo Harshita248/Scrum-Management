@@ -3,7 +3,7 @@ body{
 }
 .first {
     background-color: currentColor;
-    /*    border: 2px solid white;*/
+    border: 2px solid white;
     height: 550px;
     /*width: 250px;*/
     overflow: auto;
@@ -80,7 +80,7 @@ button:hover{
   
 }
 .icon-button {
-          float:right;
+    float:right;
     -webkit-appearance: none;
     -moz-appearance: none;
     outline: none;
