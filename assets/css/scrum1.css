@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+
+img{
+  width: 300px;
+    height: 225px;
+    margin: 50px 50px 50px 50px;
+    
+}
+
+.first {
+    background-color: currentColor;
+      border: 2px solid white;
+    height: 550px;
+    /*width: 250px;*/
+    overflow: auto;
+    /*float: left;*/
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+.second {
+    /*            width: 250px;*/
+    height: 550px;
+    background-color: currentColor;
+    border: 2px solid white;
+    overflow: auto;
+}
+
+.card {
+    /*    width: 20%;*/
+    /*    display: inline-block;*/
+    box-shadow: 2px 2px 20px #fff;
+    border-radius: 10px;
+    margin: 2%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+input {
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.submitBtn {
+    width: 80%;
+    margin-top: 5px;
+
+}
+button:hover{
+  background-color:chartreuse ;
+  color: #000;
+  transition: .5s;
+  
+}

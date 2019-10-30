@@ -1,0 +1,19 @@
+{
+  "name": "scrum-management",
+  "version": "1.0.0",
+  "description": "This is a project based on the platform of web designing which will be a website developed for amateurs and will also help people entering into codex that will make their tasks easier...",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshita248/Scrum-Management.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harshita248/Scrum-Management/issues"
+  },
+  "homepage": "https://github.com/Harshita248/Scrum-Management#readme"
+}
