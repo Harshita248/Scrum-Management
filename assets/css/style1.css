@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    background: url(../scrum/assets/images/imglogin.jpg) no-repeat;
+    background: url(../scrum/assets/css/imglogin.jpg) no-repeat;
     background-size: cover;
 }
 .container{
