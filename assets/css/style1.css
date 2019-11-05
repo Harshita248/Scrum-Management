@@ -1,13 +1,13 @@
 body{
     margin:0;
     padding: 0;
-    background: url(imglogin.jpg) no-repeat;
+    background: url(../scrum/assets/images/imglogin.jpg) no-repeat;
     background-size: cover;
 }
 .container{
     text-align: center;
      margin-top: 180px;
-     color:white;
+     color: white;
      font-family:"montserrat";
      
 }
