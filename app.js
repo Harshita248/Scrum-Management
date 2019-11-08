@@ -2,12 +2,15 @@
 var express = require("express");
 var app = express();
 var port = 3000;
+var length;
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/css",express.static(__dirname + "/css"));
-app.use(express.static(__dirname + "/html"));
+app.use('/css',express.static(__dirname + "/assets/css"));
+app.use('/images',express.static(__dirname + "/images"));
+app.use('/assets/css',express.static(__dirname + "/assets/css"));
+app.use(express.static(__dirname + "/assets/html"));
 
 
 var mongoose = require("mongoose"); 
@@ -32,16 +35,20 @@ var nameSchema = new mongoose.Schema({
 
 
 var User = mongoose.model("User", nameSchema);
-
 app.get('/fetch', (req, res) => {
-    // User.find({email : 'sweta.sahoo029@gmail.com'})
-    User.find({}).select('firstName')
+   // User.find({email : 'sweta.sahoo029@gmail.com'})
+     User.find({}).select('firstName')
     .then(doc => {
-        console.log(doc);
+        length = doc.length;
+        console.log(doc[0]);
+        // res.render('dataMembers',{
+        //         name : doc[0],
+        // });
     }).catch(err =>{
         console.log(err);
     })
 });
+
 
 app.get('/view',function(req,res){
     User.find({},function(err,docs){
@@ -57,7 +64,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/student", (req, res) => {
-    res.sendFile(__dirname + "/assets/html/scrum1.html");
+    res.sendFile(__dirname + "/assets/html/newscrum1.html");
 });
 
 app.get("/admin", (req, res) => {

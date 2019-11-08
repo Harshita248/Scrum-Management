@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Harshita248/Scrum-Management/issues"
   },
-  "homepage": "https://github.com/Harshita248/Scrum-Management#readme"
+  "homepage": "https://github.com/Harshita248/Scrum-Management#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "ejs-html": "^5.1.5"
+  }
 }
