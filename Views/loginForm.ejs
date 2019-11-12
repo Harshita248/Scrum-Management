@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,7 +13,7 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            background: url(../css/imglogin.jpg) no-repeat;
+            background: url(imglogin.jpg) no-repeat;
             background-size: cover;
 
         }
@@ -53,7 +54,7 @@
             border: none;
             outline: none;
             background: none;
-            color: white;
+            color: whiye;
             font-size: 18px;
             width: 80%;
             float: left;
@@ -83,20 +84,17 @@
 
 <body>
     <div class="login-box">
-      
+        <h1>Login</h1>
+        <div class="textbox">
+            <span class="glyphicon glyphicon-user"></span>
+            <input type="text" required placeholder="Username" name="" value="">
+        </div>
 
-            <h1>Login</h1>
-            <div class="textbox">
-                <span class="glyphicon glyphicon-user"></span>
-                <input type="text" required placeholder="Username" name="" value="">
-            </div>
-
-            <div class="textbox">
-                <span class="glyphicon glyphicon-lock"></span>
-                <input type="password" required placeholder="Password" name="" value="">
-            </div>
-            <form action="dataMembers.html"><button class="btn" type="submit" >Sign in</button></form>
-
-        
+        <div class="textbox">
+            <span class="glyphicon glyphicon-lock"></span>
+            <input type="password" required placeholder="Password" name="" value="">
+        </div>
+        <form action="/details" method="GET"><button class="btn" type="submit">Sign in</button></form>
     </div>
-</body></html>
+</body>
+</html>

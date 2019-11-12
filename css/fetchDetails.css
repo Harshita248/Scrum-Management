@@ -1,7 +1,6 @@
 body{
     background-color: black;
     font-family: Arial, sans-serif;
-    display: inline;
 }
 
 img{
@@ -25,11 +24,10 @@ img{
     padding: 10px;
     color: white;
     background-color: black;
-    
 }
 
 .second {
-     width: 250px;
+    /*            width: 250px;*/
     height: 550px;
     background-color: currentColor;
     border: 2px solid white;

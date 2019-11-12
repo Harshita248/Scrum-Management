@@ -18,6 +18,9 @@
   "homepage": "https://github.com/Harshita248/Scrum-Management#readme",
   "dependencies": {
     "ejs": "^2.7.1",
-    "ejs-html": "^5.1.5"
+    "ejs-html": "^5.1.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.7.9"
   }
 }
