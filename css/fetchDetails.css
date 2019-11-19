@@ -88,7 +88,8 @@ h1 {
   text-align: center;
 }
 
-.button1 {
+/* If it will be uncommented then there will be a box on the display of name
+  .button1 {
   text-align: center;
   font-size: 1em;
   padding: 10px;
@@ -102,7 +103,7 @@ h1 {
 .button1:hover {
   background: #06D85F;
 }
-
+ */
 .overlay {
   position: fixed;
   top: 0;
