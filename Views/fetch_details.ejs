@@ -43,13 +43,36 @@
                 </tr>
                 <% for(let i = 0; i < members.length; i++) { %>
                     <tr>
-                    <td><a href='#'><%= members[i].firstName %></a></td>
+                    <div class="firstname_display">
+                        <td><a class="button1" href='#popup1'><%= members[i].firstName %></a></td>
+                    </div>
                     <td><%= members[i].assginee %></td>
                     <td><%= members[i].status %></td>
                     </tr>
                 <% } %>           
             </table>
         </div>
+        <ul style="padding-left: 0px;">
+                <li>
+                    <form align="center">
+                         <div id="popup1" class="overlay">
+                            <div class="popup">
+                                 <h2>Name</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <h5>Branch :</h5>
+                                    <h5>Semester : </h5>
+                                    <h5>Section : </h5>
+                                    <h5>Gmail : </h5>
+                                    <h5>Mobile no :</h5>
+                                    <h5>Github link : </h5>
+                                    <button class="button2" type="submit">Accept</button>
+                                </div>
+                            </div> 
+                        </div>
+                    </form> 
+                </li>
+        </ul>
     </div>
 </body>
 
