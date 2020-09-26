@@ -1,3 +1,5 @@
+
+
 # Scrum-Management
 ## Brief:
 This is a project based on the platform of web designing which will be a website developed for amateurs and will also help people entering into codex that will make their tasks easier...
@@ -13,3 +15,99 @@ Product backlog, time-boxed iterations, and estimation are unnecessary when usin
 Achieving maximum throughout is the main goal by determining bottlenecks in the system and limiting the work in progress to reduce task context switching and ensure work is completed efficiently and quickly.
 In other words, a Kanban board only shows the next few stories that need to be completed and it's current state of progress. 
 The stories are determined by your project's backlog and the state of any story is changed as you drag the story across any state.
+
+
+### This project is under SLoP (Summer Long Projects) open source programs under DSC-DAIICT .
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+
+## How to start ?
+
+
+#### If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
+
+## Fork this repository
+
+Fork this repository by clicking on the fork button on the top of this page.
+This will create a copy of this repository in your account.
+
+## Clone the repository
+
+Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
+
+Open a terminal and run the following git command:
+
+```
+git clone "url you just copied"
+```
+
+where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
+
+
+For example:
+
+```
+git clone https://github.com/Harshita248/Scrum-Management.git
+```
+
+## Create a branch
+
+Change to the repository directory on your computer (if you are not already there):
+
+```
+cd (filename)
+```
+
+Now create a branch using the `git checkout` command:
+
+```
+git checkout -b your-new-branch-name
+```
+
+For example:
+
+```
+git checkout -b dev
+```
+
+## Make necessary changes and commit those changes
+
+Do the necessary changes.
+
+If you go to the project directory and execute the command `git status`, you'll see there are changes.
+
+Add those changes to the branch you just created using the `git add` command:
+
+```
+git add .
+```
+
+Now commit those changes using the `git commit` command:
+
+```
+git commit -m "(Add your message here)"
+```
+
+replacing `<Add your message here>` with your message.
+
+## Push changes to GitHub
+
+Push your changes using the command `git push`:
+
+```
+git push origin <branch-name>
+```
+
+replacing `<branch-name>` with the name of the branch you created earlier.
+
+## Submit your changes for review
+
+If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
+
+Now submit the pull request.
+
+Soon we will be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
+
+
+### [Additional material](additional-material/git_workflow_scenarios/additional-material.md)
