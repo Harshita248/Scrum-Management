@@ -109,5 +109,3 @@ Now submit the pull request.
 
 Soon we will be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
 
-
-### [Additional material](additional-material/git_workflow_scenarios/additional-material.md)
