@@ -6,6 +6,9 @@ This is a project based on the platform of web designing which will be a website
 
 ![trello-sample-board](https://user-images.githubusercontent.com/46245859/66678707-1d233780-ec8a-11e9-9324-a63aadb3a6b0.jpg)
 
+Contributors can communicate here
+[![Gitter](https://badges.gitter.im/Scrum-Management/SLoP.svg)](https://gitter.im/Scrum-Management/SLoP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ## Overview
 
 It is basically a Kanban Board app which provides teams with the option of managing pull-based, lean software development projects with other iterative and time-boxed projects. 
