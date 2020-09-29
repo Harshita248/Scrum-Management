@@ -6,8 +6,6 @@ This is a project based on the platform of web designing which will be a website
 
 ![trello-sample-board](https://user-images.githubusercontent.com/46245859/66678707-1d233780-ec8a-11e9-9324-a63aadb3a6b0.jpg)
 
-Contributors can communicate here
-[![Gitter](https://badges.gitter.im/Scrum-Management/SLoP.svg)](https://gitter.im/Scrum-Management/SLoP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Overview
 
@@ -23,6 +21,10 @@ The stories are determined by your project's backlog and the state of any story 
 ### This project is under SLoP (Summer Long Projects) open source programs under DSC-DAIICT .
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+Contributors can communicate here :
+
+[![Gitter](https://badges.gitter.im/Scrum-Management/SLoP.svg)](https://gitter.im/Scrum-Management/SLoP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
 ## How to start ?
