@@ -56,6 +56,16 @@ For example:
 git clone https://github.com/Harshita248/Scrum-Management.git
 ```
 
+## How to run ?
+
+After cloning the repo, run `npm install` in the terminal. 
+Then move on and run `node app.js`,
+This will start the project automatically on `localhost:3000` .
+Now you can move further to create the branch and start contributing !!
+
+![Main-Page-View](https://github.com/Harshita248/Scrum-Management/blob/master/Scrum_ss.png)
+
+
 ## Create a branch
 
 Change to the repository directory on your computer (if you are not already there):
