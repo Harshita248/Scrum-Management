@@ -1,13 +1,12 @@
 
-
-# Scrum-Management
-## Brief:
+ # Scrum-Management 🛰
+ ## Brief: 🎏
 This is a project based on the platform of web designing which will be a website developed for amateurs and will also help people entering into codex that will make their tasks easier...
 
 ![trello-sample-board](https://user-images.githubusercontent.com/46245859/66678707-1d233780-ec8a-11e9-9324-a63aadb3a6b0.jpg)
 
 
-## Overview
+ ## Overview 🎃
 
 It is basically a Kanban Board app which provides teams with the option of managing pull-based, lean software development projects with other iterative and time-boxed projects. 
 The Kanban Board allows the user to trigger an update to the Schedule State field for any drag-and-drop action from one column to another column. 
@@ -18,7 +17,7 @@ In other words, a Kanban board only shows the next few stories that need to be c
 The stories are determined by your project's backlog and the state of any story is changed as you drag the story across any state.
 
 
-### This project is under SLoP (Summer Long Projects) open source programs under DSC-DAIICT .
+ ### This project is under SLoP (Summer Long Projects) open source programs under DSC-DAIICT .🎉🎊
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -27,17 +26,17 @@ Contributors can communicate here :
 [![Gitter](https://badges.gitter.im/Scrum-Management/SLoP.svg)](https://gitter.im/Scrum-Management/SLoP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
-## How to start ?
+ ## How to start ? 🎪
 
 
 #### If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
 
-## Fork this repository
+## Fork this repository 🚀
 
 Fork this repository by clicking on the fork button on the top of this page.
 This will create a copy of this repository in your account.
 
-## Clone the repository
+## Clone the repository 🏁
 
 Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
 
@@ -56,7 +55,7 @@ For example:
 git clone https://github.com/Harshita248/Scrum-Management.git
 ```
 
-## How to run ?
+## How to run ? 🛴
 
 After cloning the repo, run `npm install` in the terminal. 
 Then move on and run `node app.js`,
@@ -66,7 +65,7 @@ Now you can move further to create the branch and start contributing !!
 ![Main-Page-View](https://github.com/Harshita248/Scrum-Management/blob/master/Scrum_ss.png)
 
 
-## Create a branch
+## Create a branch ⚓
 
 Change to the repository directory on your computer (if you are not already there):
 
@@ -86,7 +85,7 @@ For example:
 git checkout -b dev
 ```
 
-## Make necessary changes and commit those changes
+## Make necessary changes and commit those changes 🚏
 
 Do the necessary changes.
 
@@ -106,7 +105,7 @@ git commit -m "(Add your message here)"
 
 replacing `<Add your message here>` with your message.
 
-## Push changes to GitHub
+## Push changes to GitHub 🪂
 
 Push your changes using the command `git push`:
 
@@ -116,7 +115,7 @@ git push origin <branch-name>
 
 replacing `<branch-name>` with the name of the branch you created earlier.
 
-## Submit your changes for review
+## Submit your changes for review 🚩
 
 If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
 
