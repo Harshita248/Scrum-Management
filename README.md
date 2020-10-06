@@ -82,7 +82,7 @@ git checkout -b your-new-branch-name
 For example:
 
 ```
-git checkout -b dev
+git checkout -b dev_username
 ```
 
 ## Make necessary changes and commit those changes 🚏
