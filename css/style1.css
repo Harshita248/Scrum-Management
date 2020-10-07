@@ -1,4 +1,4 @@
-body{
+/*body{
     margin:0;
     padding: 0;
     background: url(imglogin.jpg) no-repeat;
@@ -10,7 +10,80 @@ body{
     color:white;
     font-family: 'Roboto', sans-serif;
      
+}*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#060c21, gray, pink, blue);
+    font-family: 'Poppins', sans-serif;
 }
+
+.homeimg
+{
+    position: absolute;
+    width:600px;
+    height:400px;
+    border: 3px solid #73AD21;
+    left: 5%;
+}
+  
+.box
+{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    left: 70%;
+}
+
+.box:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right:-2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box:after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right:-2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.box:before,
+.box:after
+{
+    background: linear-gradient(23deg, #ff0000, #060c21,#23d400);
+}
+
+.content
+{
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
 .btn{
     background: #3498db;
     padding:10px 20px;
@@ -31,4 +104,13 @@ body{
     font-weight: bolder;
     color: #077fcf;
     transition: all 0.4s;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
 }
