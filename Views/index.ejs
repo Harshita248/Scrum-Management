@@ -29,6 +29,14 @@
             </div>
         </div>
     </div>-->
+    <div id="navbar" class="navbar">
+        <a href="#default" id="logo" class="logo"><u>Scrum Mgmt.</u></a>
+        <div class="navbar-right">
+          <a class="active" href="#">Home</a>
+          <a href="#">SignIn</a>
+          <a href="#">SignUp</a>
+        </div>
+      </div>
     <img src="https://insights.dice.com/wp-content/uploads/2019/04/Project-Management-Project-Manager-Scrum-Dice.png" class="homeimg">
 
     <div class="box">
@@ -49,6 +57,21 @@
             </center>
         </div>
     </div>
+
+    <script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
 </body>
 
 </html>
