@@ -4,6 +4,33 @@
   box-sizing: border-box;
 }
 
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+.textbox i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  color: whiye;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+
 .navbar {
   background-color: rgba(255, 255, 128, 0.5);
   padding: 30px 10px;
@@ -54,10 +81,11 @@ body {
 
 .homeimg {
   position: absolute;
+  background-color: white;
   width: 900px;
   height: 600px;
   border: 3px solid #73ad21;
-  left: 10%;
+  left: 5%;
   top: 20%;
 }
 
@@ -66,7 +94,7 @@ body {
   width: 300px;
   height: 500px;
   background: inherit;
-  right: 10%;
+  right: 5%;
   top: 25%;
 }
 
@@ -137,19 +165,27 @@ body {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .homeimg {
     width: 0;
     height: 0;
   }
   .box {
     left: 10%;
-    background: url("https://insights.dice.com/wp-content/uploads/2019/04/Project-Management-Project-Manager-Scrum-Dice.png");
+    background: url("/scrum.svg");
+    background-color: white;
+    background-size: cover;
+    width: 80%;
+  }
+  .login {
+    left: 10%;
+    background: url("/login.svg");
+    background-color: white;
     background-size: cover;
     width: 80%;
   }
   .content {
-    color: black;
+    color: #ff3000;
   }
   .btn:hover {
     border-color: #060c21;
