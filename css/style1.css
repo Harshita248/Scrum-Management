@@ -1,34 +1,212 @@
-body{
-    margin:0;
-    padding: 0;
-    background: url(imglogin.jpg) no-repeat;
-    background-size: cover;
-}
-.container{
-    text-align: center;
-    margin-top: 180px;
-    color:white;
-    font-family: 'Roboto', sans-serif;
-     
-}
-.btn{
-    background: #3498db;
-    padding:10px 20px;
-    width: 120px;
-    font-size: 20px;
-    font-family: "montserrat";
-    cursor:pointer;
-    margin:10px;
-    position:relative;
-    overflow:hidden;
-    border: 3px solid white;
-    border-radius: 10px;
-    color: #fff;
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  box-sizing: border-box;
 }
 
-.btn:hover{
-    background: #fff;
-    font-weight: bolder;
-    color: #077fcf;
-    transition: all 0.4s;
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+.textbox i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  color: whiye;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+
+.navbar {
+  background-color: rgba(255, 255, 128, 0.5);
+  padding: 30px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+.navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.navbar-right {
+  float: right;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(imglogin.jpg);
+  font-family: "Poppins", sans-serif;
+}
+
+.homeimg {
+  position: absolute;
+  background-color: white;
+  width: 900px;
+  height: 600px;
+  border: 3px solid #73ad21;
+  left: 5%;
+  top: 20%;
+}
+
+.box {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  background: inherit;
+  right: 5%;
+  top: 25%;
+}
+
+.box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.box:before,
+.box:after {
+  background: linear-gradient(23deg, #ff0000, #060c21, #23d400);
+} 
+
+
+.content {
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.btn {
+  background: #3498db;
+  padding: 10px 20px;
+  width: 120px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #fff;
+  font-weight: bolder;
+  color: #077fcf;
+  transition: all 0.4s;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+
+@media screen and (max-width: 1400px) {
+  .homeimg {
+    width: 0;
+    height: 0;
+  }
+  .box {
+    left: 10%;
+    background: url("/scrum.svg");
+    background-color: white;
+    background-size: cover;
+    width: 80%;
+  }
+  .login {
+    left: 10%;
+    background: url("/login.svg");
+    background-color: white;
+    background-size: cover;
+    width: 80%;
+  }
+  .content {
+    color: #ff3000;
+  }
+  .btn:hover {
+    border-color: #060c21;
+    background: transparent;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .navbar {
+    padding: 20px 10px !important;
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar-right {
+    float: none;
+  }
+  .box {
+    top: 35%;
+  }
 }

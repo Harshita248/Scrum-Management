@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign In</title>
+    <link href="/style1.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-Sign In
-    </title>
-    <link href="/style1.css" rel="stylesheet" type="text/css">
-    
-</head>
-
-<body>
-   
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Sign in:</h1>
-                <h2 class="student-show">Student</h2>
-                <form action="/student" method="GET" id="student">
-                    <button class="btn">Student</button>
-                </form>
-                <h2 class="admin-show">Administrator</h2>
-                <form action="/admin" method="GET" id="admin">
-                    <button class="btn">Admin</button>
-                </form>
-            </div>
-        </div>
+  <body>
+    <div id="navbar" class="navbar">
+      <a href="#default" id="logo" class="logo">Scrum Mgmt.</a>
+      <div class="navbar-right">
+        <a class="active" href="#">Home</a>
+        <a href="#">Sign In</a>
+        <a href="#">Sign Up</a>
+      </div>
     </div>
-</body>
+    <img src="/scrum.svg" class="homeimg" />
 
+    <div class="box">
+      <img src="/logo.jpg" class="avatar" />
+      <div class="content">
+        <br />
+        <center>
+          <h1><u>Login Here</u></h1>
+          <h2>Student</h2>
+          <form action="/student" method="GET" id="student">
+            <button class="btn">Student</button>
+          </form>
+          <h2>Administrator</h2>
+          <form action="/admin" method="GET" id="admin">
+            <button class="btn">Admin</button>
+          </form>
+        </center>
+      </div>
+    </div>
+  </body>
 </html>
