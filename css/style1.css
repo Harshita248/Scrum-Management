@@ -170,18 +170,10 @@ body {
     width: 80%;
   }
   .box {
-    top: 85%;
+    top: 95%;
     left: 10%;
     width: 80%;
     margin-bottom: 15%;
-  }
-  .content {
-    color: #ff3000;
-  }
-  .btn:hover {
-    border-color: #060c21;
-    background: transparent;
-    color: black;
   }
 }
 
@@ -200,9 +192,10 @@ body {
     float: none;
   }
   .homeimg {
+    margin-top: 15%;
     top: 30%;
   }
   .box {
-    top: 100%;
+    top: 120%;
   }
 }
