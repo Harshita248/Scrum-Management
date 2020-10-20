@@ -30,10 +30,9 @@
   margin: 0 10px;
 }
 
-
 .navbar {
-  background-color: rgba(255, 255, 128, 0.5);
-  padding: 30px 10px;
+  background-color: #ffffff;
+  padding: 20px 10px;
   transition: 0.4s;
   position: fixed;
   width: 100%;
@@ -43,29 +42,27 @@
 
 .navbar a {
   float: left;
-  color: black;
+  color: rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-  border-radius: 4px;
 }
 
 .navbar #logo {
   font-size: 35px;
   font-weight: bold;
+  color: black;
   transition: 0.4s;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar a.active {
-  background-color: dodgerblue;
-  color: white;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-right {
@@ -82,11 +79,11 @@ body {
 .homeimg {
   position: absolute;
   background-color: white;
-  width: 900px;
-  height: 600px;
+  width: 800px;
+  height: 500px;
   border: 3px solid #73ad21;
   left: 5%;
-  top: 20%;
+  top: 25%;
 }
 
 .box {
@@ -124,8 +121,7 @@ body {
 .box:before,
 .box:after {
   background: linear-gradient(23deg, #ff0000, #060c21, #23d400);
-} 
-
+}
 
 .content {
   padding: 20px;
@@ -164,25 +160,20 @@ body {
   left: calc(50% - 50px);
 }
 
-
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1250px) {
+  body {
+    justify-items: center;
+  }
   .homeimg {
-    width: 0;
-    height: 0;
+    top: 15%;
+    left: 10%;
+    width: 80%;
   }
   .box {
+    top: 85%;
     left: 10%;
-    background: url("/scrum.svg");
-    background-color: white;
-    background-size: cover;
     width: 80%;
-  }
-  .login {
-    left: 10%;
-    background: url("/login.svg");
-    background-color: white;
-    background-size: cover;
-    width: 80%;
+    margin-bottom: 15%;
   }
   .content {
     color: #ff3000;
@@ -197,6 +188,8 @@ body {
 @media screen and (max-width: 580px) {
   .navbar {
     padding: 20px 10px !important;
+    margin-bottom: 10px;
+    border-bottom: 10px solid rgb(4,25,31);
   }
   .navbar a {
     float: none;
@@ -206,7 +199,10 @@ body {
   .navbar-right {
     float: none;
   }
+  .homeimg {
+    top: 30%;
+  }
   .box {
-    top: 35%;
+    top: 100%;
   }
 }
