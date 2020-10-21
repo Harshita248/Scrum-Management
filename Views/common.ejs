@@ -1,0 +1,37 @@
+<div class="loader-body" id="loader">
+  <div class="loader loadingio-spinner-spin-8fz6k2ttvuc">
+    <div class="ldio-fzb6wek8tvr">
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+      <div><div></div></div>
+    </div>
+  </div>
+</div>
+<div id="navbar" class="navbar">
+  <a href="#default" id="logo" class="logo">Scrum Mgmt.</a>
+  <div class="navbar-right">
+    <a class="active" href="#">Home</a>
+    <a href="#">Sign In</a>
+    <a href="#">Sign Up</a>
+  </div>
+</div>
+<script>
+    document.body.onload = () => {
+      setTimeout(() => {
+        var preloader = document.getElementById("loader");
+        if (!preloader.classList.contains("done")) {
+          preloader.classList.add("done");
+        }
+      }, 200);
+    };
+  </script>
