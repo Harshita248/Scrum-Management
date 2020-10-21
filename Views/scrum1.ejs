@@ -1,151 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Learn Easy</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet">
-    <style>
-        body {
-            background-color: black;
-        }
+    <link href="/common.css" rel="stylesheet" type="text/css" />
+    <link href="/fetchDetails.css" rel="stylesheet" type="text/css" />
+  </head>
 
-        img {
-            width: 300px;
-            height: 225px;
-            margin: 50px 50px 50px 50px;
-
-        }
-
-        .first {
-            background-color: currentColor;
-            border: 2px solid white;
-            height: 550px;
-            /*width: 250px;*/
-            overflow: auto;
-            /*float: left;*/
-        }
-
-        .title {
-            text-align: center;
-            padding: 10px;
-            color: white;
-            background-color: black;
-        }
-
-        .second {
-            /*            width: 250px;*/
-            height: 550px;
-            background-color: currentColor;
-            border: 2px solid white;
-            overflow: auto;
-        }
-
-        .card {
-            /*    width: 20%;*/
-            /*    display: inline-block;*/
-            box-shadow: 2px 2px 20px #fff;
-            border-radius: 10px;
-            margin: 2%;
-            padding-right: 0px;
-            padding-left: 0px;
-        }
-
-        input {
-            width: 80%;
-            border-radius: 5px;
-            margin-top: 5px;
-        }
-
-        .submitBtn {
-            width: 80%;
-            margin-top: 5px;
-
-        }
-
-        button:hover {
-            background-color: chartreuse;
-            color: #000;
-            transition: .5s;
-
-        }
-    </style>
-</head>
-
-<body class="">
-
+  <body class="">
+    <%- include('./common') %>
     <div class="container-fluid">
-        <div class="row1" align="center">
-            <marquee scrollamount="10">
-                <img src="cdxlogo.png" width="500px" border="5" bordercolor="white">
-                <img src="img1.jpg" width="500px" border="5" bordercolor="white">
-                <img src="img2.jpg" width="500px" border="5" bordercolor="white">
-                <img src="img3.jpg" width="500px" border="5" bordercolor="white">
-                <img src="img4.jpeg" width="500px" border="5" bordercolor="white">
-                <img src="img5.jpg" width="500px" border="5" bordercolor="white">
-            </marquee>
+      <div class="row1" align="center">
+        <marquee scrollamount="10">
+          <img src="cdxlogo.png" width="500px" border="5" bordercolor="white" />
+          <img src="img1.jpg" width="500px" border="5" bordercolor="white" />
+          <img src="img2.jpg" width="500px" border="5" bordercolor="white" />
+          <img src="img3.jpg" width="500px" border="5" bordercolor="white" />
+          <img src="img4.jpeg" width="500px" border="5" bordercolor="white" />
+          <img src="img5.jpg" width="500px" border="5" bordercolor="white" />
+        </marquee>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <!--div id="first"-->
+          <div class="first card">
+            <div class="title">
+              <h3>Unchecked</h3>
+            </div>
+            <ul style="padding-left: 0px">
+              <!---->
+              <li>
+                <form
+                  align="center"
+                  id="student_details"
+                  action="/insertData"
+                  method="POST"
+                >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Name"
+                    pattern="[A-Z a-z]{6,20}"
+                    title="Username must be defined with uppercase and lowercase characters only"
+                  />
+                  <input
+                    type="text"
+                    id="branch"
+                    name="branch"
+                    required
+                    placeholder="Branch"
+                    pattern="[A-Z a-z]{3-20}"
+                    title="Branch must be defined with Uppercase and lowercase characters only"
+                  />
+                  <input
+                    type="text"
+                    id="Sem"
+                    name="Sem"
+                    required
+                    placeholder="Semester"
+                    pattern="[1-7]{1}"
+                    title="Semester must be a digit between 1 to 7"
+                  />
+                  <input
+                    type="text"
+                    id="sec"
+                    name="sec"
+                    required
+                    placeholder="Section"
+                    pattern="[A-Z]{1}"
+                    title="Section must be a Uppercase character"
+                  />
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Email"
+                  />
+                  <input
+                    type="text"
+                    id="num"
+                    name="num"
+                    required
+                    placeholder="Mobile No"
+                    pattern="[0-9]{10}"
+                    title="Mobile number must be a 10 digited number"
+                  />
+                  <input
+                    type="text"
+                    id="git"
+                    name="git"
+                    required
+                    placeholder="Github link"
+                    pattern="https?://github.com/.+"
+                    title="Github link must follow the pattern http://github.com/"
+                  />
+                  <button
+                    class="submitBtn"
+                    type="submit"
+                    onsubmit="validate()"
+                    value="Add"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <!--div id="first"-->
-                <div class="first card">
-                    <div class="title">
-                        <h3>Unchecked</h3>
-                    </div>
-                    <ul style="padding-left: 0px;">
-                        <!---->
-                        <li>
-                            <form align="center" id="student_details" action="/insertData" method="POST">
-                                <input type="text" id="name" name="name" required placeholder="Name"
-                                    pattern="[A-Z a-z]{6,20}"
-                                    title="Username must be defined with uppercase and lowercase characters only">
-                                <input type="text" id="branch" name="branch" required placeholder="Branch"
-                                    pattern="[A-Z a-z]{3-20}"
-                                    title="Branch must be defined with Uppercase and lowercase characters only">
-                                <input type="text" id="Sem" name="Sem" required placeholder="Semester"
-                                    pattern="[1-7]{1}" title="Semester must be a digit between 1 to 7">
-                                <input type="text" id="sec" name="sec" required placeholder="Section" pattern="[A-Z]{1}"
-                                    title="Section must be a Uppercase character">
-                                <input type="text" id="email" name="email" required placeholder="Email">
-                                <input type="text" id="num" name="num" required placeholder="Mobile No"
-                                    pattern="[0-9]{10}" title="Mobile number must be a 10 digited number">
-                                <input type="text" id="git" name="git" required placeholder="Github link"
-                                    pattern="https?://github.com/.+"
-                                    title="Github link must follow the pattern http://github.com/">
-                                <button class="submitBtn" type="submit" onsubmit="validate()"
-                                    value="Add">Submit</button>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
+        <div class="col-sm-3">
+          <div class="second card">
+            <div class="title">
+              <h3>In progress</h3>
             </div>
-            <div class="col-sm-3">
-                <div class="second card">
-                    <div class="title">
-                        <h3>In progress</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="second card">
-                    <div class="title">
-                        <h3>Checked</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="second card">
-                    <div class="title">
-                        <h3>Members</h3>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-sm-3">
+          <div class="second card">
+            <div class="title">
+              <h3>Checked</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="second card">
+            <div class="title">
+              <h3>Members</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
