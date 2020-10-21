@@ -78,6 +78,8 @@ app.get('/', (req, res) => res.render ('index'));
 app.get('/student', (req, res) => res.render ('scrum1'));
 app.get('/admin', (req, res) => res.render ('loginForm'));
 app.get('/fetch_details', (req, res) => res.render('fetch_details'));
+app.get('/regadm', (req, res) => res.render('registeradm'));
+app.get('/regstu', (req, res) => res.render('registerstu'));
 
 /*app.listen (port, () => {
   console.log ('server listening on port ' + port);
