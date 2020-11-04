@@ -1,0 +1,113 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/register.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Register as Student</title>
+</head>
+
+<body>
+    <div id="navbar" class="navbar">
+        <a href="#default" id="logo" class="logo">Scrum Mgmt.</a>
+        <div class="navbar-right">
+            <a href="#">Home</a>
+            <a href="#">Sign In</a>
+            <div class="dropdown">
+                <button class="dropbutton"><a href="#" class="active">Sign Up</a></button>
+                <div class="dropdown-content">
+                    <form action="/regadm" method="GET" id="regadmin">
+                        <button class="dropbutton"><a>As Admin</a></button>
+                    </form>
+                    <form action="/regstu" method="GET" id="regstud">
+                        <button class="dropbutton"><a>As Student</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align:center">Hey👋, Please Help us with your details.</h1>
+    <hr class="nb-3">
+    <div class="container">
+        <h2 style="text-align:center"> <u> Registration Form: </u> </h2>
+        <hr class="nb-3">
+        <form action="/sign_up_stu" method="POST">
+            <div class="row">
+                <div class="col-6">
+                    <label for="firstname"><b>First Name</b></label>
+                    <input type="text" class="form-control" placeholder="First name" name="firstname" id="firstname" required>
+                </div>
+                <div class="col-6">
+                    <label for="lastname"><b>Last Name</b></label>
+                    <input type="text" class="form-control" placeholder="Last name" name="lastname" id="lastname">
+                </div>
+            </div>
+            <hr class="nb-3">
+            <div class="row">
+                <div class="col-4">
+                    <label for="branch"><b>Branch</b></label>
+                    <input type="text" class="form-control" placeholder="Branch" name="branch" id="branch" required>
+                </div>
+                <div class="col-4">
+                    <label for="semester"><b>Semester</b></label>
+                    <input type="text" class="form-control" placeholder="Semester" name="sem" id="sem" required>
+                </div>
+                <div class="col-4">
+                    <label for="section"><b>Section</b></label>
+                    <input type="text" class="form-control" placeholder="Section" name="sec" id="sec" required>
+                </div>
+            </div>
+            <hr class="nb-3">
+            <div class="row">
+                <div class="col">
+                    <label for="college"><b>College/University</b></label>
+                    <input type="text" class="form-control" placeholder="College / University" name="clg" id="clg" required>
+                </div>
+            </div>
+            <hr class="nb-3">
+            <div class="row">
+                <div class="col-6">
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="text" class="form-control" placeholder="E-mail" name="email" id="email" required>
+                </div>
+                <div class="col-6">
+                    <label for="phno"><b>Phone Number</b></label>
+                    <input type="text" class="form-control" placeholder="Phone Number" name="phno" id="phno">
+                </div>
+            </div>
+            <hr class="nb-3">
+            <div class="row">
+                <div class="col-6">
+                    <label for="password"><b>Password</b></label>
+                    <input type="text" class="form-control" placeholder="Password" name="password" id="password" required>
+                </div>
+                <div class="col-6">
+                    <label for="conpass"><b>Confirm Password</b></label>
+                    <input type="text" class="form-control" placeholder="Confirm Password" name="conpass" id="conpass" required>
+                </div>
+            </div>
+            <hr class="nb-3">
+            <div class="row">
+                <div class="col-6">
+                    <label for="github"><b>Github Account</b></label>
+                    <input type="text" class="form-control" placeholder="Github Account" name="github" id="github" required>
+                </div>
+                <div class="col-6">
+                    <label for="linkedin"><b>LinkedIn Account</b></label>
+                    <input type="text" class="form-control" placeholder="LinkedIn Account" name="linkedin" id="linkedin">
+                </div>
+            </div>
+            <hr class="nb-3">
+            <input type="submit" class="btn btn-danger btn-lg btn-block" id="submitDetails"  
+            name="submitDetails" value="Sign Up">
+            <hr class="nb-3">
+        </form>
+    </div>
+    <hr class="nb-3">
+</body>
+
+</html>

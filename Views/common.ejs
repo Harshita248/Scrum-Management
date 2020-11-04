@@ -17,12 +17,24 @@
     </div>
   </div>
 </div>
+
 <div id="navbar" class="navbar">
   <a href="#default" id="logo" class="logo">Scrum Mgmt.</a>
   <div class="navbar-right">
     <a class="active" href="#">Home</a>
     <a href="#">Sign In</a>
-    <a href="#">Sign Up</a>
+    <div class="dropdown">
+      <button class="dropbutton"><a href="#">Sign Up</a></button>
+      <div class="dropdown-content">
+        <form action="/regadm" method="GET" id="regadmin">
+          <button class="dropbutton"><a>As Admin</a></button>
+        </form>
+        <form action="/regstu" method="GET" id="regstu">
+          <button class="dropbutton"><a>As Student</a></button>
+        </form>
+
+      </div>
+    </div>
   </div>
 </div>
 <script>
