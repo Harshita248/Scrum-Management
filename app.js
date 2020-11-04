@@ -37,7 +37,33 @@ var nameSchema = new mongoose.Schema ({
   status : String
 });
 
+var AdmSchema = new mongoose.Schema ({
+  firstName: String,
+  lastname: String,
+  org: String,
+  email: String,
+  phno: Number,
+  pass: String,
+  github : String,
+  linkedin : String
+});
+
+var StuSchema = new mongoose.Schema ({
+  firstName: String,
+  lastname: String,
+  branch: String,
+  sem: Number,
+  sec: String,
+  email: String,
+  phno: Number,
+  pass: String,
+  github : String,
+  linkedin : String
+});
+
 var User = mongoose.model ('User', nameSchema);
+var User_Adm = mongoose.model ('User_Adm', AdmSchema);
+var User_Stu = mongoose.model ('User_Stu', StuSchema);
 //mongodb search
 var findit=User.find({});
 app.set('views','./views');
@@ -53,6 +79,48 @@ app.get('/details',(req, res) => {
   });		
 }).listen(3000);
 console.log('running on 3000');
+
+app.post ('/sign_up_adm', (req, res) => {
+  new User_Adm ({
+    firstName: req.body.firstname,
+    lastname: req.body.lastname,
+    org: req.body.org,
+    email: req.body.email,
+    phno: req.body.phno,
+    pass: req.body.pass,
+    github : req.body.github,
+    linkedin : req.body.linkedin
+  }).save (function (err, doc) {
+    if (err) res.json (err);
+    else {
+      console.log (doc);
+      res.redirect('/');
+    }
+  });
+});
+
+app.post ('/sign_up_stu', (req, res) => {
+  new User_Stu ({
+    firstName: req.body.firstname,
+    lastname: req.body.lastname,
+    branch: req.body.branch,
+    sem: req.body.sem,
+    sec: req.body.sec,
+    clg: req.body.clg,
+    email: req.body.email,
+    phno: req.body.phno,
+    pass: req.body.pass,
+    github : req.body.github,
+    linkedin : req.body.linkedin
+  }).save (function (err, doc) {
+    if (err) res.json (err);
+    else {
+      console.log (doc);
+      res. redirect('/');
+    }
+  });
+});
+
 
 app.post ('/insertData', (req, res) => {
   new User ({

@@ -34,60 +34,61 @@
     <hr class="nb-3">
     <div class="container">
         <h2 style="text-align:center"> <u> Registration Form: </u> </h2>
-        <hr class="nb-3">
-        <form>
+     <hr class="nb-3">
+        <form action="/sign_up_adm" method="POST">
             <div class="row">
                 <div class="col-6">
                     <label for="firstname"><b>First Name</b></label>
-                    <input type="text" class="form-control" placeholder="First name" required>
+                    <input type="text" class="form-control" placeholder="First name" name="firstname" id="firstname" required>
                 </div>
                 <div class="col-6">
                     <label for="lastname"><b>Last Name</b></label>
-                    <input type="text" class="form-control" placeholder="Last name">
+                    <input type="text" class="form-control" placeholder="Last name" name="lastname" id="lastname">
                 </div>
             </div>
             <hr class="nb-3">
             <div class="row">
                 <div class="col">
                     <label for="org"><b>Organization</b></label>
-                    <input type="text" class="form-control" placeholder="Organization" required>
+                    <input type="text" class="form-control" placeholder="Organization" name="organization" id="organization" required>
                 </div>
             </div>
             <hr class="nb-3">
             <div class="row">
                 <div class="col-6">
                     <label for="email"><b>E-mail</b></label>
-                    <input type="text" class="form-control" placeholder="E-mail" required>
+                    <input type="email" class="form-control" placeholder="E-mail" name="email" id="email" required>
                 </div>
                 <div class="col-6">
                     <label for="phno"><b>Phone Number</b></label>
-                    <input type="text" class="form-control" placeholder="Phone Number">
+                    <input type="text" class="form-control" placeholder="Phone Number" name="phno" id="phno">
                 </div>
             </div>
             <hr class="nb-3">
             <div class="row">
                 <div class="col-6">
                     <label for="password"><b>Password</b></label>
-                    <input type="text" class="form-control" placeholder="Password" required>
+                    <input type="text" class="form-control" placeholder="Password" name="password" id="password" required>
                 </div>
                 <div class="col-6">
                     <label for="conpass"><b>Confirm Password</b></label>
-                    <input type="text" class="form-control" placeholder="Confirm Password" required>
+                    <input type="text" class="form-control" placeholder="Confirm Password" name="conpass" id="conpass" required>
                 </div>
             </div>
             <hr class="nb-3">
             <div class="row">
                 <div class="col-6">
                     <label for="github"><b>Github Account</b></label>
-                    <input type="text" class="form-control" placeholder="Github Account" required>
+                    <input type="text" class="form-control" placeholder="Github Account" name="github" id="github" required>
                 </div>
                 <div class="col-6">
                     <label for="linkedin"><b>LinkedIn Account</b></label>
-                    <input type="text" class="form-control" placeholder="LinkedIn Account">
+                    <input type="text" class="form-control" placeholder="LinkedIn Account" name="linkedin" id="linkedin">
                 </div>
             </div>
             <hr class="nb-3">
-            <button type="button" class="btn btn-danger btn-lg btn-block">Sign Up</button>
+            <input type="submit" class="btn btn-danger btn-lg btn-block" id="submitDetails"  
+            name="submitDetails" value="Sign Up">
             <hr class="nb-3">
         </form>
     </div>
