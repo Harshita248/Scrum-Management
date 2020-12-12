@@ -17,13 +17,9 @@ In other words, a Kanban board only shows the next few stories that need to be c
 The stories are determined by your project's backlog and the state of any story is changed as you drag the story across any state.
 
 
- ### This project is under SLoP (Semester Long Projects) open source programs under DSC-DAIICT .🎉🎊
+ ### This project is under SWOC (Script Winter Of Code) open source program .🎉🎊
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
-Contributors can communicate here :
-
-[![Gitter](https://badges.gitter.im/Scrum-Management/SLoP.svg)](https://gitter.im/Scrum-Management/SLoP?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
  ## How to start ? 🎪
