@@ -1,6 +1,9 @@
 body {
-  background-color: black;
-  font-family: Arial, sans-serif;
+    /* background-color:black; */
+    background-image: url(learnEasy_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
 }
 
 img {
