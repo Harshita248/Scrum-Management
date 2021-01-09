@@ -1,0 +1,261 @@
+/*------    LOGIN_PAGE    -----*/
+.login_Main {
+  padding-top: 150px;
+}
+
+.header_Body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: all0.3s ease-in;
+}
+
+.header_Body .heading_Login {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.header_Body .heading_Login2 {
+  max-width: 84%;
+  text-align: center;
+  margin-bottom: 5%;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 17px;
+  color: #505256;
+}
+
+.button_Tags {
+  justify-content: center;
+  flex-direction: row;
+}
+
+.cta-Login-dark {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: #f00946;
+  border: 2px solid #f00946;
+  color: #fff;
+  padding: 12px 28px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.6s ease opacity 1;
+  /* transform: translate(20px, -5px); */
+}
+
+.cta-Login-dark:hover {
+  opacity: 0.9;
+  border-color: #f00946;
+  transition: 0.5s;
+}
+
+.cta-Login {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1.5px solid #e1e4e8;
+  color: #505256;
+  padding: 12px 28px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.6s ease opacity 1;
+  /* transform: translate(20px, -5px); */
+}
+
+.cta-Login:hover {
+  border: 1.5px solid #b0b7c3;
+}
+
+.cta-Login:hover {
+  opacity: 0.9;
+}
+
+/* Login Portal CSS */
+.login_portal {
+  padding-top: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.portal_row {
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 16px 0 rgba(8, 11, 14, 0.1),
+    0 16px 16px 1px rgba(8, 11, 14, 0.1);
+}
+
+.center h1 {
+  text-align: center;
+  padding: 0 0 10px 0;
+  margin-top: 40px;
+}
+
+.center form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt_field {
+  position: relative;
+  margin: 25px 0;
+}
+
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 45px;
+  font-size: 16px;
+  border: 1px solid #adadad;
+  padding-left: 6%;
+  border-radius: 25px;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.txt_field input::placeholder {
+  color: #adadad;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.txt_field .far {
+  position: absolute;
+  color: #adadad;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+}
+
+.txt_field input:focus {
+  border: 1px solid #f00946;
+}
+
+.pass {
+  margin: -5px 0 60px 5px;
+  color: #a7aab0;
+  cursor: pointer;
+}
+
+.pass:hover {
+  text-decoration: none;
+  color: #b0b7c3;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ffc0cb;
+  background: #ffc0cb;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #f00946;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 9%;
+}
+
+input[type="submit"]:hover {
+  background: #ffb6c1;
+  transition: 0.5s;
+}
+
+.signup_link {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #a7aab0;
+}
+.signup_link a {
+  color: #f00946;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ------  RESPONSIVENESS  ------ */
+
+@media (max-width: 800px) {
+  .header_Body {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .login_portal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center {
+    width: 50%;
+    margin: 5% 2%;
+  }
+}
+
+@media (max-width: 650px) {
+  .login_Main {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .header_Body {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header_Body .heading_Login {
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .header_Body .heading_Login2 {
+    margin-top: 8%;
+    max-width: 95%;
+    font-size: 15px;
+  }
+
+  .button_Tags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 12%;
+  }
+
+  .cta-Login-dark {
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .cta-Login {
+    max-width: 100%;
+  }
+
+  .center {
+    width: 80%;
+    margin: 7% 2%;
+  }
+}

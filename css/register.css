@@ -1,35 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #aa4b6b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #3b8d99,
-    #6b6b83,
-    #aa4b6b
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: rgb(2, 0, 36);
   background: linear-gradient(
-    to right,
-    #3b8d99,
-    #6b6b83,
-    #aa4b6b
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 39, 255, 0) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
-b {
-  font-size: 20px;
-}
+
 .container {
   width: 80%;
   margin: auto;
   left: 10%;
-  border: 2px solid #cae4db;
-  border-radius: 22px;
+  border: 2px solid rgb(255, 255, 255);
 }
 .navbar {
-  background-color: #cae4db;
+  background-color: #ffffff;
   padding: 20px 10px;
   transition: 0.4s;
   position: fixed;
@@ -66,16 +56,7 @@ b {
 .navbar-right {
   float: right;
 }
-.heading-text,
-.form-heading {
-  font-family: "Kanit", sans-serif;
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
 
-.button-register {
-  margin-top: 19px;
-}
 .dropdown {
   position: relative;
   display: inline-block;

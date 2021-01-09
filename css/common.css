@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background: #24252a; */
+}
 @keyframes ldio-fzb6wek8tvr {
   0% {
     opacity: 1;
@@ -199,6 +205,196 @@
   margin: 0 10px;
 }
 
+/* Navbar starts here */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_Header {
+  z-index: 1;
+  color: black;
+  position: fixed;
+  top: 0;
+  height: 18vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+  font-size: 16px;
+  position: relative;
+  transition: top 0.8s;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav_Header a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu button {
+  display: none;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+}
+
+.menu-list li {
+  display: inline-block;
+  margin-left: 32px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-list li a {
+  color: #505256;
+  text-decoration: none;
+}
+
+.menu-list li.active,
+.menu-list li:hover {
+  border-bottom: 2px solid #f00946;
+  transition: all ease;
+}
+
+.cta-nav {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: #222831;
+  border: 2px solid #222831;
+  color: #fff;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translate(20px, -8px);
+}
+
+.cta-nav:hover {
+  background: transparent;
+  border: 2px solid #222831;
+  color: #505256;
+}
+
+/* ------  RESPONSIVENESS  ------ */
+@media (max-width: 800px) {
+  header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: #505256;
+    outline: none;
+    font-size: 1.7em;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu i.fa-times,
+  .menu.opened i.fa-bars {
+    display: none;
+  }
+
+  .menu.opened i.fa-times,
+  .menu i.fa-bars {
+    display: block;
+    animation: enter 0.8s;
+  }
+
+  @keyframes enter {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .menu-list {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 46px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 80px;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+
+  .cta-nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    transform: translateX(-5px);
+    padding: 10px 20px;
+  }
+
+  .menu-list li {
+    font-size: 1.7em;
+    margin: 32px 0px;
+  }
+
+  .menu-list li a {
+    color: #fff;
+  }
+
+  .menu.opened .menu-list {
+    transform: translateX(0);
+  }
+
+  .menu.opened button {
+    color: #fff;
+  }
+}
+
+/* Old Navbar */
+/* 
 .navbar {
   background-color: #ffffff;
   padding: 20px 10px;
@@ -281,8 +477,7 @@
   display: inline-block;
 }
 
-.dropbutton
-{
+.dropbutton {
   border: hidden;
   background-color: #ffffff;
 }
@@ -291,7 +486,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -302,11 +497,17 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 @media screen and (max-width: 700px) {
   .navbar {
@@ -329,4 +530,4 @@
   .box {
     top: 120%;
   }
-}
+} */
