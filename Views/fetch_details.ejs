@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Check Easy</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" type="text/css" href="fetchDetails.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="fetchDetails.css" />
     <link href="/common.css" rel="stylesheet" type="text/css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <%- include('./common') %>
-     <div class="container-fluid">
-        <div class="row1" align="center">
-             <marquee scrollamount="10">
-                <img src="cdxlogo.png" width="500px" border="5" bordercolor="white">
-                <img src="img1.jpg" width="500px" border="5" bordercolor="white">
-                <img src="img2.jpg" width="500px" border="5" bordercolor="white">
-                <img src="img3.jpg" width="500px" border="5" bordercolor="white">
-                <img src="img4.jpeg" width="500px" border="5" bordercolor="white">
-                <img src="img5.jpg" width="500px" border="5" bordercolor="white">
-            </marquee>
-        </div>
+    <div class="container-fluid">
+      <div class="row1" align="center">
+        <marquee scrollamount="10">
+          <img src="cdxlogo.png" width="500px" border="5" bordercolor="white" />
+          <img src="img1.jpg" width="500px" border="5" bordercolor="white" />
+          <img src="img2.jpg" width="500px" border="5" bordercolor="white" />
+          <img src="img3.jpg" width="500px" border="5" bordercolor="white" />
+          <img src="img4.jpeg" width="500px" border="5" bordercolor="white" />
+          <img src="img5.jpg" width="500px" border="5" bordercolor="white" />
+        </marquee>
+      </div>
+    </div>
     <div class="container">
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped" id="students_name">
-                <tr>
-                    <th>Members</th>
-                    <th>Assignee</th>
-                    <th>Status</th>
-                </tr>
-                <% for(let i = 0; i < members.length; i++) { %>
-                    <tr>
-                    <div class="firstname_display">
-                        <td><a class="button1" href='#popup1'><%= members[i].firstName %></a></td>
-                    </div>
-                    <td><%= members[i].assginee %></td>
-                    <td><%= members[i].status %></td>
-                    </tr>
-                <% } %>           
-            </table>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped" id="students_name">
+          <tr>
+            <th>Members</th>
+            <th>Assignee</th>
+            <th>Status</th>
+          </tr>
+          <% for(let i = 0; i < members.length; i++) { %>
+          <tr>
+            <div class="firstname_display">
+              <td>
+                <button class="btn showBtn btn-secondary p-1 m-1" data-show="<%= JSON.stringify(members[i]) %>" data-toggle="modal" data-target="#showDetailModal">
+                  <%= members[i].firstName %>
+                </button>
+              </td>
+            </div>
+            <td><%= members[i].assginee %></td>
+            <td><%= members[i].status %></td>
+          </tr>
+          <% } %>
+        </table>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="showDetailModal" tabindex="-1" role="dialog" aria-labelledby="showDetailModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title mr-3 ml-5 pl-5" id="showDetailModalLabel"></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body pl-4">
+              <h5 id="branch"></h5>
+              <h5 id="sem"></h5>
+              <h5 id="sec"></h5>
+              <h5 id="email"></h5>
+              <h5 id="mob"></h5>
+              <h5 id="git"></h5>
+              <button type="button submit" class="btn btn-secondary" data-dismiss="modal">Accept</button>
+            </div>
+          </div>
         </div>
-        <ul style="padding-left: 0px;">
+      </div>
+      <!--<ul style="padding-left: 0px;">
                 <li>
                     <form align="center">
                          <div id="popup1" class="overlay">
@@ -73,8 +107,23 @@
                         </div>
                     </form> 
                 </li>
-        </ul>
+        </ul>-->
     </div>
-</body>
-
+    <script>
+      let showBtn = document.querySelectorAll(".showBtn");
+      showBtn.forEach((btn) => {
+        $(btn).click(() => {
+             $('#showDetailModal').modal('show');
+          let det = JSON.parse(btn.dataset.show);
+          console.log(det);
+          $("#showDetailModalLabel").text(det.firstName);
+          $("#branch").text("Branch: " + det.branch);
+          $("#sec").text("Section: " + det.sec);
+          $("#email").text("Gmail: " + det.email);
+          $("#mob").text("Mobile No.: " + det.num);
+          $("#git").text("Github: " + det.git);
+        });
+      });
+    </script>
+  </body>
 </html>
