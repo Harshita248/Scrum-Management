@@ -1,0 +1,135 @@
+.features_outMost {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.features_main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.headTag {
+  background: black;
+  border-radius: 25px;
+  color: #fff;
+  height: 7%;
+  padding: 1% 2% 1% 2%;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.features_Heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-top: 4%;
+  margin-bottom: 1.5%;
+}
+
+.features_Para {
+  line-height: 30px;
+  font-size: 17px;
+  margin-bottom: 5%;
+  color: #505256;
+  max-width: 50%;
+}
+
+.features_Cards_Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.features_Card_Body {
+  position: relative;
+  top: 50%;
+  width: 300px;
+  margin-bottom: 5%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 16px 0 rgba(8, 11, 14, 0.1),
+    0 16px 16px 1px rgba(8, 11, 14, 0.1);
+}
+
+.features_Card_Body:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+}
+
+.features_Inner {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.features_Img {
+  margin-top: 8%;
+  margin-bottom: 14%;
+}
+
+.flex_Heading {
+  line-height: 32px;
+  font-size: 22px;
+  margin-bottom: 8%;
+  font-weight: 700;
+}
+
+.flex_Para {
+  line-height: 30px;
+  font-size: 17px;
+  color: #505256;
+  margin-bottom: 16%;
+}
+
+.btn_F {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button_B {
+  color: #0284fe;
+  font-weight: 700;
+}
+
+/* ------  RESPONSIVENESS  ------ */
+
+@media (max-width: 800px) {
+  .headTag {
+    padding: 2% 3% 2% 3%;
+  }
+
+  .features_Para {
+    margin-top: 8%;
+    font-size: 15px;
+  }
+
+  .features_Cards_Row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features_Card_Body {
+    width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .features_Heading {
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .features_Para {
+    max-width: 95%;
+    padding-left: 7%;
+  }
+
+  .features_Card_Body {
+    width: 80%;
+  }
+}

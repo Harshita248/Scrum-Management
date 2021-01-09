@@ -1,0 +1,132 @@
+/*------    LANDING_PAGE    -----*/
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 82vh;
+}
+
+.right img {
+  width: 100%;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.left {
+  max-width: 45%;
+  padding: 40px 64px;
+}
+
+.right {
+  padding: 40px 40px;
+}
+
+.top-line {
+  color: #222831;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.heading {
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #f00946;
+}
+
+.msg {
+  color: #1c2237;
+  font-size: 1.1em;
+  letter-spacing: 0.7px;
+  line-height: 32px;
+  margin-bottom: 48px;
+}
+
+button.cta {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #fff;
+  padding: 16px 34px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  /* box-shadow: 0 20px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08); */
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 1px 1px 0 rgba(8, 11, 14, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-out opacity 0.9;
+}
+
+button.cta:hover {
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06),
+    0 16px 16px -1px rgba(8, 11, 14, 0.1);
+  /* opacity: 0.9; */
+  transition: 0.5s;
+}
+
+/* ------  RESPONSIVENESS  ------ */
+
+@media (max-width: 800px) {
+  .left,
+  .right {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    font-size: 0.8em;
+  }
+
+  .left * {
+    width: 95%;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  button.cta {
+    max-width: 60%;
+  }
+
+  .right img {
+    width: 80%;
+  }
+}
