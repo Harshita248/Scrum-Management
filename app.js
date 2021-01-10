@@ -66,7 +66,7 @@ var User_Adm = mongoose.model ('User_Adm', AdmSchema);
 var User_Stu = mongoose.model ('User_Stu', StuSchema);
 //mongodb search
 var findit=User.find({});
-app.set('views','./views');
+app.set('views','./Views');
 app.use(express.static('views'));
 
 //go to http://localhost:3000/details to get the required data
@@ -74,9 +74,9 @@ app.use(express.static('views'));
 app.get('/details',(req, res) => {
 	findit.exec(function(err,data){
 	if(err) throw err;
-    res.render('fetch_details',{members : data});	
+    res.render('fetch_details',{members : data});
     console.log(data);
-  });		
+  });
 }).listen(3000);
 console.log('running on 3000');
 
