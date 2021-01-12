@@ -4,6 +4,7 @@ const mongoose = require ('mongoose');
 const fs = require('fs');
 var app = express ();
 var port = 3000;
+const bcrypt = require('bcryptjs')
 
 var length;
 
@@ -81,7 +82,8 @@ app.get('/details',(req, res) => {
 console.log('running on 3000');
 
 app.post ('/sign_up_adm', (req, res) => {
-  new User_Adm ({
+
+  const newUser = new User_Adm ({
     firstName: req.body.firstname,
     lastname: req.body.lastname,
     org: req.body.org,
@@ -90,17 +92,32 @@ app.post ('/sign_up_adm', (req, res) => {
     pass: req.body.pass,
     github : req.body.github,
     linkedin : req.body.linkedin
-  }).save (function (err, doc) {
-    if (err) res.json (err);
-    else {
-      console.log (doc);
-      res.redirect('/');
-    }
-  });
+  })
+  
+   // Hashing password
+      bcrypt.genSalt(8,(err,salt) => {
+        bcrypt.hash(req.body.pass , salt , (err,hash) => {
+          if(err)  throw err
+          
+          newUser.pass = hash
+
+          newUser.save (function (err, doc) {
+            if (err) res.json (err);
+            else {
+               console.log (doc);
+                res.redirect('/');
+            }
+            });
+        });
+    });
 });
 
 app.post ('/sign_up_stu', (req, res) => {
-  new User_Stu ({
+
+  // password and confirm password matched
+  if(req.body.pass != req.body.conpass) res.json ('Password do not match ')
+
+  const newUser = new User_Stu ({
     firstName: req.body.firstname,
     lastname: req.body.lastname,
     branch: req.body.branch,
@@ -109,16 +126,27 @@ app.post ('/sign_up_stu', (req, res) => {
     clg: req.body.clg,
     email: req.body.email,
     phno: req.body.phno,
-    pass: req.body.pass,
+    pass : req.body.pass,
     github : req.body.github,
     linkedin : req.body.linkedin
-  }).save (function (err, doc) {
-    if (err) res.json (err);
-    else {
-      console.log (doc);
-      res. redirect('/');
-    }
-  });
+  })
+
+   // Hashing password
+   bcrypt.genSalt(8,(err,salt) => {
+    bcrypt.hash(req.body.pass , salt , (err,hash) => {
+      if(err)  throw err
+
+      newUser.pass = hash
+      newUser.save (function (err, doc) {
+        if (err) res.json (err);
+        else {
+          console.log (doc);
+          res. redirect('/');
+        }
+      });
+      
+    })
+  })
 });
 
 
