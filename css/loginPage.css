@@ -79,7 +79,6 @@
 
 /* Login Portal CSS */
 .login_portal {
-  padding-top: 4%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -90,23 +89,70 @@
   align-items: center;
 }
 
-.center {
+.form-box {
+  width: 380px;
+  height: 500px;
   position: relative;
-  top: 50%;
-  width: 350px;
-  background: #fff;
+  margin: 6% auto;
   border-radius: 10px;
+  background: whitesmoke;
   box-shadow: 0 0 16px 0 rgba(8, 11, 14, 0.1),
     0 16px 16px 1px rgba(8, 11, 14, 0.1);
+  padding: 5px;
+  overflow: hidden;
 }
 
-.center h1 {
+.button-box {
+  width: 300px;
+  margin: 25px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 35px;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  color: #505256;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.input-group {
+  position: absolute;
+  width: 290px;
+  transition: 0.5s;
+}
+
+#admin {
+  left: 50px;
+}
+
+#student {
+  left: 450px;
+}
+
+.input-group h1 {
   text-align: center;
   padding: 0 0 10px 0;
   margin-top: 40px;
 }
 
-.center form {
+.input-group form {
   padding: 0 40px;
   box-sizing: border-box;
 }
@@ -178,7 +224,7 @@ input[type="submit"]:hover {
 }
 
 .signup_link {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 14px;
   color: #a7aab0;
