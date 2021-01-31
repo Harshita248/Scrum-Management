@@ -14,10 +14,36 @@ body {
   );
 }
 
+.reg-head {
+  letter-spacing: 7px;
+  animation: color-change 0.8s infinite;
+  font-family: emoji;
+  margin: 20px;
+}
+
+@keyframes color-change {
+  0% { color: #4FCF88; }
+  50% { color: #F3689B; }
+  75% { color: #C44545; }
+  100% {color: #322CDD;}
+}
+
+.btn {
+  background: #322CDD;
+  color: white;
+}
+
+.btn:hover {
+  background: white;
+  color: #322CDD;
+  transition: all 2s linear;
+}
+
 .container {
   
   width: 80%;
   margin: auto;
+  margin-bottom: 47px;
   left: 10%;
   border: 2px solid rgb(255, 255, 255);
   margin-top: 45px;
