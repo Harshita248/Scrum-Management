@@ -5,18 +5,26 @@
 body {
   background: rgb(2, 0, 36);
   background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 39, 255, 0) 50%,
-    rgba(0, 212, 255, 1) 100%
+    45deg,
+    rgba(124, 128, 155),
+    rgba(243, 104, 155),
+    rgba(112, 112, 255),
+    rgba(79, 207, 136)
+    
   );
 }
 
 .container {
+  
   width: 80%;
   margin: auto;
   left: 10%;
   border: 2px solid rgb(255, 255, 255);
+  margin-top: 45px;
+  border-radius: 50px;
+  color: white;
+  /* background: linear-gradient(0.25turn, #F7483B, #3590F3, #33FF96, #FEB248); */
+
 }
 .navbar {
   background-color: #ffffff;
