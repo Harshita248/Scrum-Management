@@ -19,6 +19,70 @@
 
 <body>
 
+
+    <!-- <div id="navbar" class="navbar">
+        <a href="#default" id="logo" class="logo">Scrum Mgmt.</a>
+        <div class="navbar-right">
+            <a href="#">Home</a>
+            <a href="#">Sign In</a>
+            <div class="dropdown">
+                <button class="dropbutton"><a href="#" class="active">Sign Up</a></button>
+                <div class="dropdown-content">
+                    <form action="/regadm" method="GET" id="regadmin">
+                        <button class="dropbutton"><a>As Admin</a></button>
+                    </form>
+                    <form action="/regstu" method="GET" id="regstud">
+                        <button class="dropbutton"><a>As Student</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <h1 style="text-align: center; color: white; font-style: oblique; font-weight: bold; letter-spacing: 5px;"> Hey👋, Please Help us with your details.</h1>
+    <hr class="nb-3">
+    <div class="container">
+        <h2 class="reg-head" style="text-align:center;">Registration Form</h2>
+     <hr class="nb-3">
+        <form action="/sign_up_adm" method="POST">
+            <div class="row">
+                <div class="col-6">
+                    <label for="firstname"><b>First Name</b></label>
+                    <input type="text" class="form-control" placeholder="First name" name="firstname" id="firstname" required>
+                </div>
+                <div class="col-6">
+                    <label for="lastname"><b>Last Name</b></label>
+                    <input type="text" class="form-control" placeholder="Last name" name="lastname" id="lastname">
+                </div>
+            </div>
+            <hr class="nb-3">
+            <div class="row">
+                <div class="col">
+                    <label for="org"><b>Organization</b></label>
+                    <input type="text" class="form-control" placeholder="Organization" name="org" id="organization" required>
+                </div>
+            </div>
+            <hr class="nb-3">
+            <div class="row">
+                <div class="col-6">
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="email" class="form-control" placeholder="E-mail" name="email" id="email" required>
+                </div>
+                <div class="col-6">
+                    <label for="phno"><b>Phone Number</b></label>
+                    <input type="text" class="form-control" placeholder="Phone Number" name="phno" id="phno">
+                </div>
+            </div>
+            <hr class="nb-3">
+            <div class="row">
+                <div class="col-6">
+                    <label for="password"><b>Password</b></label>
+                    <input type="text" class="form-control" placeholder="Password" name="pass" id="password" required>
+                </div>
+                <div class="col-6">
+                    <label for="conpass"><b>Confirm Password</b></label>
+                    <input type="text" class="form-control" placeholder="Confirm Password" name="conpass" id="conpass" required>
+                </div>
+
     <div class="container">
         <%- include('./common') %>
 
@@ -137,6 +201,7 @@
               <button class="btn transparent" id="sign-up-btn">
                 Sign up
               </button>
+
             </div>
             <img src="/Rocket.svg" class="image" alt="" />
           </div>
@@ -150,6 +215,13 @@
                 Sign in
               </button>
             </div>
+
+          <hr class="nb-3">
+            <input type="submit" class="btn btn-lg btn-block" id="submitDetails" name="submitDetails" value="Sign Up">            
+            <hr class="nb-3">
+        </form>
+    </div>
+    <hr class="nb-3">
             <img src="/Winter_Office.svg" class="image" alt="" />
           </div>
         </div>
