@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   </head>
 
-  <script>
+  <!-- <script>
     var menu = document.querySelector('.menu');
     var menuBtn = document.querySelector('.menu button');
     menuBtn.addEventListener('click', () => {
       menu.classList.toggle('opened')
     })
-  </script>
+  </script> -->
 
   <body>
     <%- include('./common') %>
@@ -61,14 +61,21 @@
 
     
     <section class="login_portal">
-      
-            <!--  Admin Login Portal  -->
-            <div class="center">
-              <h1>Admin Login account</h1>
-              <div class="signup_link">
-                Don't have an account? <a href="/regadm">Create One</a>
+
+          <!-- New Form Template -->
+            <div class="form-box">
+              <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="admin()">Admin Login</button>
+                <button type="button" class="toggle-btn" onclick="student()">Student Login</button>
               </div>
-              <form action="" method="post">
+
+              <form id="admin" class="input-group" action="" method="post">
+                <h1>Admin Login account</h1>
+                <div class="signup_link">
+                  Don't have an account? <a href="/regadm">Create One</a>
+                </div>
+
                 <div class="txt_field">
                   <input type="email" placeholder="johndoe@gmail.com" required>
                   <i class="far fa-envelope"></i>
@@ -79,30 +86,26 @@
                 </div>
                 <div class="pass">Forgot Password?</div>
                 <input type="submit" value="Login">
-                
+              </form>
+
+              <form id="student" class="input-group" action="" method="post">
+                <h1>Student Login account</h1>
+                <div class="signup_link">
+                  Don't have an account? <a href="/regadm">Create One</a>
+                </div>
+
+                <div class="txt_field">
+                  <input type="email" placeholder="johndoe@gmail.com" required>
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="txt_field">
+                  <input type="password" placeholder="Password" required>
+                  <i class="far fa-eye"></i>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
               </form>
             </div>
-
-          <!--  Student Login Portal  -->
-          <div class="center">
-            <h1>Student Login account</h1>
-            <div class="signup_link">
-              Don't have an account? <a href="/regstu">Create One</a>
-            </div>
-            <form action="" method="post">
-              <div class="txt_field">
-                <input type="email" placeholder="johndoe@gmail.com" required>
-                <i class="far fa-envelope"></i>
-              </div>
-              <div class="txt_field">
-                <input type="password" placeholder="Password" required>
-                <i class="far fa-eye"></i>
-              </div>
-              <div class="pass">Forgot Password?</div>
-              <input type="submit" value="Login">
-              
-            </form>
-          </div>
 
     </section>
 
@@ -172,14 +175,32 @@
 
 
 
-    <script>
+    <!-- <script>
       var menu = document.querySelector('.menu');
       var menuBtn = document.querySelector('.menu button');
       menuBtn.addEventListener('click', () => {
         menu.classList.toggle('opened')
       })
+    </script>     -->
+
+    <script>
+      
+      var x = document.getElementById("admin");
+      var y = document.getElementById("student");
+      var z = document.getElementById("btn");
+
+      function student(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "150px";
+      }
+      function admin() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+
     </script>
-    
 
     <!-- TO ADD FOOTER just remove the below two tags </body> and </html> and then uncomment the below code -->
     <%- include('footer')%>
