@@ -7,8 +7,8 @@ body {
   background: linear-gradient(
     45deg,
     rgba(124, 128, 155),
-    rgba(243, 104, 155),
-    rgba(112, 112, 255),
+    rgba(255, 180, 180),
+    rgba(169, 139, 152),
     rgba(79, 207, 136)
     
   );
@@ -23,21 +23,34 @@ body {
 
 @keyframes color-change {
   0% { color: #4FCF88; }
-  50% { color: #F3689B; }
+  50% { color: #ec4646; }
   75% { color: #C44545; }
   100% {color: #322CDD;}
 }
 
-.btn {
+#submitDetails {
   background: #322CDD;
   color: white;
-}
+  width: 47%;
+  border-radius: 25px;
+  margin-left: 17.5rem;
+}   
 
-.btn:hover {
+#submitDetails:hover {
   background: white;
   color: #322CDD;
   transition: all 2s linear;
 }
+
+ @media screen and (max-width: 960px)
+ {
+  #submitDetails
+   {    
+     margin-left: 5.8rem;
+   }
+}
+
+
 
 .container {
   
