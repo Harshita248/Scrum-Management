@@ -26,7 +26,33 @@ img {
   padding: 10px;
   color: white;
   background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
+
+#inProgress, #checked, #members, #unchecked{
+  scroll-behavior: smooth;
+  position: relative;
+}
+.inProgress, .checked, .members, .unchecked{
+ overflow: auto ;
+}
+
+.add{
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ right: 0%; 
+ color: black;
+}
+.ad{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0%; 
+  color: black;
+ }
 
 .second {
   /*            width: 250px;*/
@@ -86,6 +112,8 @@ h1 {
   background-clip: padding-box;
   text-align: center;
 }
+
+
 
 /* If it will be uncommented then there will be a box on the display of name
   .button1 {
