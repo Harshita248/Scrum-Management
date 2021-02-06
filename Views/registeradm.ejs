@@ -1,246 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="/ScrollBar.css" rel="stylesheet" type="text/css" />
-    <link href="/common.css" rel="stylesheet" type="text/css" />
-    <link href="/register.css" rel="stylesheet" type="text/css" />
-    <link href="/footer.css" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap CDN -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    Font-Awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-    <title>Register as Admin</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="/ScrollBar.css" rel="stylesheet" type="text/css" />
+  <link href="/common.css" rel="stylesheet" type="text/css" />
+  <link href="/register.css" rel="stylesheet" type="text/css" />
+  <link href="/footer.css" rel="stylesheet" type="text/css" />
+  <!-- Font-Awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  <title>Register as Admin</title>
+</head>
 
 <body>
+  <div class="container">
+    <%- include('./common') %>
 
-
-    <!-- <div id="navbar" class="navbar">
-        <a href="#default" id="logo" class="logo">Scrum Mgmt.</a>
-        <div class="navbar-right">
-            <a href="#">Home</a>
-            <a href="#">Sign In</a>
-            <div class="dropdown">
-                <button class="dropbutton"><a href="#" class="active">Sign Up</a></button>
-                <div class="dropdown-content">
-                    <form action="/regadm" method="GET" id="regadmin">
-                        <button class="dropbutton"><a>As Admin</a></button>
-                    </form>
-                    <form action="/regstu" method="GET" id="regstud">
-                        <button class="dropbutton"><a>As Student</a></button>
-                    </form>
-                </div>
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Admin Registration</h2>
+            <div class="input-field">
+              <i class="fa fa-user"></i>
+              <input type="text" placeholder="Full Name" />
             </div>
-        </div>
-    </div> -->
-    <h1 style="text-align: center; color: white; font-style: oblique; font-weight: bold; letter-spacing: 5px;"> Hey👋, Please Help us with your details.</h1>
-    <hr class="nb-3">
-    <div class="container">
-        <h2 class="reg-head" style="text-align:center;">Registration Form</h2>
-     <hr class="nb-3">
-        <form action="/sign_up_adm" method="POST">
-            <div class="row">
-                <div class="col-6">
-                    <label for="firstname"><b>First Name</b></label>
-                    <input type="text" class="form-control" placeholder="First name" name="firstname" id="firstname" required>
-                </div>
-                <div class="col-6">
-                    <label for="lastname"><b>Last Name</b></label>
-                    <input type="text" class="form-control" placeholder="Last name" name="lastname" id="lastname">
-                </div>
+            <div class="input-field">
+              <i class="fa fa-building"></i>
+              <input type="text" placeholder="Organization" />
             </div>
-            <hr class="nb-3">
-            <div class="row">
-                <div class="col">
-                    <label for="org"><b>Organization</b></label>
-                    <input type="text" class="form-control" placeholder="Organization" name="org" id="organization" required>
-                </div>
+            <div class="input-field">
+              <i class="fa fa-envelope"></i>
+              <input type="text" placeholder="Email" />
             </div>
-            <hr class="nb-3">
-            <div class="row">
-                <div class="col-6">
-                    <label for="email"><b>E-mail</b></label>
-                    <input type="email" class="form-control" placeholder="E-mail" name="email" id="email" required>
-                </div>
-                <div class="col-6">
-                    <label for="phno"><b>Phone Number</b></label>
-                    <input type="text" class="form-control" placeholder="Phone Number" name="phno" id="phno">
-                </div>
+            <div class="input-field">
+              <i class="fa fa-mobile-alt"></i>
+              <input type="number" placeholder="Mobile No." />
             </div>
-            <hr class="nb-3">
-            <div class="row">
-                <div class="col-6">
-                    <label for="password"><b>Password</b></label>
-                    <input type="text" class="form-control" placeholder="Password" name="pass" id="password" required>
-                </div>
-                <div class="col-6">
-                    <label for="conpass"><b>Confirm Password</b></label>
-                    <input type="text" class="form-control" placeholder="Confirm Password" name="conpass" id="conpass" required>
-                </div>
-
-    <div class="container">
-        <%- include('./common') %>
-
-        <div class="forms-container">
-          <div class="signin-signup">
-            <form action="#" class="sign-in-form">
-              <h2 class="title">Admin Registration 👋</h2>
-              <div class="input-field">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Full Name" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-building"></i>
-                <input type="text" placeholder="Organization" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Email" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-mobile-alt"></i>
-                <input type="number" placeholder="Mobile No." />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" />
-              </div>
-              <div class="input-field">
-                <i class="fab fa-github"></i>
-                <input type="text" placeholder="Github" />
-              </div>
-              <div class="input-field">
-                <i class="fab fa-linkedin"></i>
-                <input type="text" placeholder="LinkedIn" />
-              </div>
-              <input type="submit" value="Sign Up" class="btn solid" />
-              <p class="social-text">Or Sign in with social platforms</p>
-              <div class="social-media">
-                <a href="#" class="social-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </form>
-
-            <!-- Student Registration -->
-            <form action="#" class="sign-up-form">
-              <h2 class="title">Student Registration 👋</h2>
-              <div class="input-field">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Full Name" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-building"></i>
-                <input type="text" placeholder="University" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-warehouse"></i>
-                <input type="text" placeholder="Branch" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Email" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-mobile-alt"></i>
-                <input type="number" placeholder="Mobile No." />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" />
-              </div>
-              <div class="input-field">
-                <i class="fab fa-github"></i>
-                <input type="text" placeholder="Github" />
-              </div>
-              <div class="input-field">
-                <i class="fab fa-linkedin"></i>
-                <input type="text" placeholder="LinkedIn" />
-              </div>
-              <input type="submit" class="btn" value="Sign up" />
-              <p class="social-text">Or Sign up with social platforms</p>
-              <div class="social-media">
-                <a href="#" class="social-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </form>
-          </div>
-        </div>
-  
-        <div class="panels-container">
-          <div class="panel left-panel">
-            <div class="content">
-              <h3>Are you a Student ?</h3>
-              <p>
-                Join us from this link and get access to all the features given by this organization
-              </p>
-              <button class="btn transparent" id="sign-up-btn">
-                Sign up
-              </button>
-
+            <div class="input-field">
+              <i class="fa fa-lock"></i>
+              <input type="password" placeholder="Password" />
             </div>
-            <img src="/Rocket.svg" class="image" alt="" />
-          </div>
-          <div class="panel right-panel">
-            <div class="content">
-              <h3>Are you from Adminstration ?</h3>
-              <p>
-                Join us from this link and be a part of this growing organization
-              </p>
-              <button class="btn transparent" id="sign-in-btn">
-                Sign in
-              </button>
+            <div class="input-field">
+              <i class="fab fa-github"></i>
+              <input type="text" placeholder="Github" />
             </div>
+            <div class="input-field">
+              <i class="fab fa-linkedin"></i>
+              <input type="text" placeholder="LinkedIn" />
+            </div>
+            <input type="submit" value="Sign Up" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
 
-          <hr class="nb-3">
-            <input type="submit" class="btn btn-lg btn-block" id="submitDetails" name="submitDetails" value="Sign Up">            
-            <hr class="nb-3">
-        </form>
-    </div>
-    <hr class="nb-3">
-            <img src="/Winter_Office.svg" class="image" alt="" />
-          </div>
+          <!-- Student Registration -->
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Student Registration</h2>
+            <div class="input-field">
+              <i class="fa fa-user align-item-center"></i>
+              <input type="text" placeholder="Full Name" />
+            </div>
+            <div class="input-field">
+              <i class="fa fa-building justify-content-center"></i>
+              <input type="text" placeholder="University" />
+            </div>
+            <div class="input-field">
+              <i class="fa fa-warehouse justify-content-center"></i>
+              <input type="text" placeholder="Branch" />
+            </div>
+            <div class="input-field">
+              <i class="fa fa-envelope justify-content-center"></i>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fa fa-mobile-alt justify-content-center"></i>
+              <input type="number" placeholder="Mobile No." />
+            </div>
+            <div class="input-field">
+              <i class="fa fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <div class="input-field">
+              <i class="fab fa-github justify-content-center"></i>
+              <input type="text" placeholder="Github" />
+            </div>
+            <div class="input-field">
+              <i class="fab fa-linkedin justify-content-center"></i>
+              <input type="text" placeholder="LinkedIn" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
         </div>
       </div>
 
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Are you a Student ?</h3>
+            <p>
+              Join us from this link and get access to all the features given by this organization
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+            <img src="/Rocket.svg" class="image" alt="" />
+          </div>
+        </div>
 
-    <script>
-        const sign_in_btn = document.querySelector("#sign-in-btn");
-        const sign_up_btn = document.querySelector("#sign-up-btn");
-        const container = document.querySelector(".container");
 
-        sign_up_btn.addEventListener("click", () => {
-        container.classList.add("sign-up-mode");
-        });
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Are you from Adminstration ?</h3>
+            <p>
+              Join us from this link and be a part of this growing organization
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+            <img src="/Winter_Office.svg" class="image" alt="" />
+          </div>
+        </div>
 
-        sign_in_btn.addEventListener("click", () => {
-        container.classList.remove("sign-up-mode");
-        });
-   </script>
+      </div>
+  </div>
+  </div>
+</body>
 
-    <%- include('footer')%>
+<script>
+  const sign_in_btn = document.querySelector("#sign-in-btn");
+  const sign_up_btn = document.querySelector("#sign-up-btn");
+  const container = document.querySelector(".container");
 
+  sign_up_btn.addEventListener("click", () => {
+    container.classList.add("sign-up-mode");
+  });
+
+  sign_in_btn.addEventListener("click", () => {
+    container.classList.remove("sign-up-mode");
+  });
+</script>
+
+<%- include('footer')%>
