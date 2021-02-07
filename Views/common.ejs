@@ -18,10 +18,9 @@
   </div>
 </div>
 
-
 <header id="navbar" class="nav_Header">
-  <a href="#"><h1>Scrum</h1></a>
-  
+  <a href="/"><h1>Scrum</h1></a>
+
   <section class="menu">
     <ul class="menu-list">
       <li class="active"><a href="/">Home</a></li>
@@ -38,21 +37,18 @@
   </section>
 </header>
 
-  
-
-
 <script>
-    document.body.onload = () => {
-      setTimeout(() => {
-        var preloader = document.getElementById("loader");
-        if (!preloader.classList.contains("done")) {
-          preloader.classList.add("done");
-        }
-      }, 200);
-    };
-  </script>
-  
-  <!-- <script>
+  document.body.onload = () => {
+    setTimeout(() => {
+      var preloader = document.getElementById("loader");
+      if (!preloader.classList.contains("done")) {
+        preloader.classList.add("done");
+      }
+    }, 200);
+  };
+</script>
+
+<!-- <script>
     // When the user scrolls down 20px from the top of the document, slide down the navbar
     var prevScollLoc = window.pageYOffset;
     window.onscroll = function() {

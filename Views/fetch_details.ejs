@@ -31,14 +31,18 @@
   <body>
     <%- include('./common') %>
     <div class="container-fluid">
-      <div class="row1" align="center">
+      <div class="row1" align-items="center">
         <marquee scrollamount="10">
-          <img src="cdxlogo.png" width="500px" border="5" bordercolor="white" />
-          <img src="img1.jpg" width="500px" border="5" bordercolor="white" />
-          <img src="img2.jpg" width="500px" border="5" bordercolor="white" />
-          <img src="img3.jpg" width="500px" border="5" bordercolor="white" />
-          <img src="img4.jpeg" width="500px" border="5" bordercolor="white" />
-          <img src="img5.jpg" width="500px" border="5" bordercolor="white" />
+          <img
+            src="cdxlogo.png"
+            width="500px"
+            style="border: 5px solid white"
+          />
+          <img src="img2.jpg" width="500px" style="border: 5px solid white" />
+          <img src="img1.jpg" width="500px" style="border: 5px solid white" />
+          <img src="img3.jpg" width="500px" style="border: 5px solid white" />
+          <img src="img4.jpeg" width="500px" style="border: 5px solid white" />
+          <img src="img5.jpg" width="500px" style="border: 5px solid white" />
         </marquee>
       </div>
     </div>
@@ -54,7 +58,12 @@
           <tr>
             <div class="firstname_display">
               <td>
-                <button class="btn showBtn btn-secondary p-1 m-1" data-show="<%= JSON.stringify(members[i]) %>" data-toggle="modal" data-target="#showDetailModal">
+                <button
+                  class="btn showBtn btn-secondary p-1 m-1"
+                  data-show="<%= JSON.stringify(members[i]) %>"
+                  data-toggle="modal"
+                  data-target="#showDetailModal"
+                >
                   <%= members[i].firstName %>
                 </button>
               </td>
@@ -66,12 +75,27 @@
         </table>
       </div>
       <!-- Modal -->
-      <div class="modal fade" id="showDetailModal" tabindex="-1" role="dialog" aria-labelledby="showDetailModal" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="showDetailModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="showDetailModal"
+        aria-hidden="true"
+      >
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title mr-3 ml-5 pl-5" id="showDetailModalLabel"></h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <h4
+                class="modal-title mr-3 ml-5 pl-5"
+                id="showDetailModalLabel"
+              ></h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -82,7 +106,13 @@
               <h5 id="email"></h5>
               <h5 id="mob"></h5>
               <h5 id="git"></h5>
-              <button type="button submit" class="btn btn-secondary" data-dismiss="modal">Accept</button>
+              <button
+                type="button submit"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Accept
+              </button>
             </div>
           </div>
         </div>
@@ -113,7 +143,7 @@
       let showBtn = document.querySelectorAll(".showBtn");
       showBtn.forEach((btn) => {
         $(btn).click(() => {
-             $('#showDetailModal').modal('show');
+          $("#showDetailModal").modal("show");
           let det = JSON.parse(btn.dataset.show);
           console.log(det);
           $("#showDetailModalLabel").text(det.firstName);

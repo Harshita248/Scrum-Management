@@ -183,7 +183,7 @@ form.sign-in-form {
 
 .image {
   width: 100%;
-  transition: transform 1.1s ease-in-out;
+  transition: 1.1s ease-in-out;
   transition-delay: 0.4s;
 }
 
@@ -417,70 +417,6 @@ form.sign-in-form {
     left: 50%;
   }
 }
-
-/* body {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    45deg,
-    rgba(124, 128, 155),
-    rgba(255, 180, 180),
-    rgba(169, 139, 152),
-    rgba(79, 207, 136)
-    
-  );
-}
-
-.reg-head {
-  letter-spacing: 7px;
-  animation: color-change 0.8s infinite;
-  font-family: emoji;
-  margin: 20px;
-}
-
-@keyframes color-change {
-  0% { color: #4FCF88; }
-  50% { color: #ec4646; }
-  75% { color: #C44545; }
-  100% {color: #322CDD;}
-}
-
-#submitDetails {
-  background: #322CDD;
-  color: white;
-  width: 47%;
-  border-radius: 25px;
-  margin-left: 17.5rem;
-}   
-
-#submitDetails:hover {
-  background: white;
-  color: #322CDD;
-  transition: all 2s linear;
-}
-
- @media screen and (max-width: 960px)
- {
-  #submitDetails
-   {    
-     margin-left: 5.8rem;
-   }
-}
-
-
-
-.container {
-  
-  width: 80%;
-  margin: auto;
-  margin-bottom: 47px;
-  left: 10%;
-  border: 2px solid rgb(255, 255, 255);
-  margin-top: 45px;
-  border-radius: 50px;
-  color: white;
-  /* background: linear-gradient(0.25turn, #F7483B, #3590F3, #33FF96, #FEB248); */
-
-}
 .navbar {
   background-color: #ffffff;
   padding: 20px 10px;
@@ -555,4 +491,4 @@ form.sign-in-form {
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
-} */
+}
