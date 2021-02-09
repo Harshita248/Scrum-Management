@@ -1,9 +1,10 @@
 body {
-    /* background-color:black; */
-    background-image: url(learnEasy_bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
+    display: flex;
+}
+
+form{
+  margin: auto;
 }
 
 img {
@@ -115,7 +116,7 @@ h1 {
 
 
 
-/* If it will be uncommented then there will be a box on the display of name
+/* If it will be uncommented then there will be a box on the display of name*/
   .button1 {
   text-align: center;
   font-size: 1em;
@@ -130,7 +131,7 @@ h1 {
 .button1:hover {
   background: #06D85F;
 }
- */
+ 
 .overlay {
   position: fixed;
   top: 0;
