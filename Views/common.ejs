@@ -24,8 +24,8 @@
   <section class="menu">
     <ul class="menu-list">
       <li class="active"><a href="/">Home</a></li>
-      <li><a>About</a></li>
-      <li><a>Contact Us</a></li>
+      <li><a href="/#About">About</a></li>
+      <li><a href="/#Contact">Contact Us</a></li>
       <li><a>Developers</a></li>
       <a class="cta-nav" href="/regadm">Sign Up</a>
     </ul>
@@ -48,18 +48,15 @@
   };
 </script>
 
-<!-- <script>
-    // When the user scrolls down 20px from the top of the document, slide down the navbar
-    var prevScollLoc = window.pageYOffset;
-    window.onscroll = function() {
-      
-      var currScrollLoc = window.pageYOffset;
-      if (prevScrollLoc > currScrollLoc) {
-          document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-10px";
-      }
+<script>
+   // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
 
-      prevScollLoc =currScrollLoc;
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "-50px";
+      } else {
+        document.getElementById("navbar").style.top = "0";
+      }
     }
-  </script> -->
+  </script>
