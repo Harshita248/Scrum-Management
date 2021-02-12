@@ -11,6 +11,7 @@
     <link href="/homePage.css" rel="stylesheet" type="text/css" />
     <link href="/loginPage.css" rel="stylesheet" type="text/css" />
     <link href="/features.css" rel="stylesheet" type="text/css" />
+    <link href="/Contact.css" rel="stylesheet" type="text/css" />
     <link href="/footer.css" rel="stylesheet" type="text/css" />
     <!-- Font-Awesome cdn -->
     <link
@@ -115,7 +116,7 @@
     </section>
 
     <!-----     FEATURES PAGE    ----->
-    <section class="features_outMost">
+    <section id="About" class="features_outMost">
       <div class="features_main">
         <span class="headTag"> Key Features </span>
         <h1 class="features_Heading">What we do here!?</h1>
@@ -184,13 +185,92 @@
       </div>
     </section>
 
-    <!-- <script>
+
+
+  <!-- Contact Us-->
+  <div id="Contact">
+
+
+    <!--1st Row of section-7-->
+
+    <div class="row-heading">
+        <div id="col-lg-12" class="col-lg-12">
+            <h1 id="h1" style="text-align: center; color: black;" data-aos="fade-up"><b>Contact Us</b></h1>
+            <hr class="style-two-2" data-aos="fade-up" data-aos-delay="300">
+            <h2 id="contact-us-text" data-aos="fade-right" data-aos-delay="400"> The Technical Ecosystem is Brewing with <span style="color: #f00946">change</span>. We are Fanning the <span style="color: #f00946">fire</span>.</h2>
+        </div>
+    </div>
+
+
+    <!--2nd Row of section-7-->
+    
+    <div class="row-contact contact-dynamic" style="background-color: whitesmoke; box-shadow: 0 0 16px 0 rgba(8, 11, 14, 0.1),
+    0 16px 16px 1px rgba(8, 11, 14, 0.1);" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-lg-8 full-table">
+          
+            <h4 class="h6" style="color: #222831; margin-bottom: 4%;">Send Us A Message</h4>
+
+            <form action="notification.php" method="post" class="contact">
+                <div>
+                    <input class="full-width contact-fill" type="text" placeholder="Your Name" id="nameInputID" name="name">
+                    <input class="full-width contact-fill" type="email" placeholder="Your Email" id="emailInputID" name="email">
+                    <input class="full-width contact-fill" type="text" placeholder="Subject" id="subjectInputID" name="subject">
+                </div>
+
+                <textarea class="full-width contact-message" placeholder="Your message" id="messageInputID" name="msg"></textarea>
+
+                <button id="contactSubmitButton" class="btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="col-lg-4 tab-full d-none d-md-block" style="margin-bottom: 10%">
+
+            <h4 class="h6" style="color: #222831; margin-bottom: 15%">CONTACT INFO</h4>
+
+            <div class="cinfo">
+                <h5 class="col-left" style="color: #f00946">Where to Find Us</h5>
+                <p class="cont-para">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto est, voluptatibus error quidem, in maxime inventore, 
+                  repudiandae dicta quaerat temporibus quis aspernatur vero eum autem.
+                </p>
+            </div>
+
+            <div class="cinfo">
+                <h5 class="col-left" style="color: #f00946">Harshita Raj</h5>
+                <p class="cont-para"> President, SCRUM
+                    <br>
+                     <a href="mailto:bitptechnical@gmail.com"><i class="fas fa-envelope"></i>harshita@scrum.org.in</a><br>
+                    <i class="fa fa-phone-square " aria-hidden="true"></i><a href="tel:+91-62071-46108">
+                        +91-12345-67890</a>
+                </p>
+            </div>
+
+            <div class="cinfo">
+                <h5 class="col-left" style="color: #f00946">Jon</h5>
+                <p class="cont-para"> Web-Master, SCRUM
+                    <br>
+                    <a href="mailto:be15196.18@bitmesra.ac.in"><i class="fas fa-envelope"></i>webmaster@scrum.org.in</a><br>
+                    <i class="fa fa-phone-square " aria-hidden="true"></i><a href="tel:+91-77820-55110">
+                      +91-12345-67890</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+  </div>
+  <!--Contact ENDS here-->
+
+
+
+    <script>
       var menu = document.querySelector('.menu');
       var menuBtn = document.querySelector('.menu button');
       menuBtn.addEventListener('click', () => {
         menu.classList.toggle('opened')
       })
-    </script>     -->
+    </script>    
 
     <script>
       var x = document.getElementById("admin");
