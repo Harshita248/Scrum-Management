@@ -19,8 +19,9 @@ img{
 }
 
 .title {
-    text-align: center;
-    padding: 10px;
+    /* text-align: center; */
+    text-align: left !important;
+    /* padding: 10px; */
     color: white;
     background-color: black;
 }

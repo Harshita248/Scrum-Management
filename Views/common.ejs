@@ -18,10 +18,9 @@
   </div>
 </div>
 
-
 <header id="navbar" class="nav_Header">
-  <a href="#"><h1>Scrum</h1></a>
-  
+  <a href="/"><h1>Scrum</h1></a>
+
   <section class="menu">
     <ul class="menu-list">
       <li class="active"><a href="/">Home</a></li>
@@ -38,32 +37,26 @@
   </section>
 </header>
 
-  
-
+<script>
+  document.body.onload = () => {
+    setTimeout(() => {
+      var preloader = document.getElementById("loader");
+      if (!preloader.classList.contains("done")) {
+        preloader.classList.add("done");
+      }
+    }, 200);
+  };
+</script>
 
 <script>
-    document.body.onload = () => {
-      setTimeout(() => {
-        var preloader = document.getElementById("loader");
-        if (!preloader.classList.contains("done")) {
-          preloader.classList.add("done");
-        }
-      }, 200);
-    };
-  </script>
-  
-  <!-- <script>
-    // When the user scrolls down 20px from the top of the document, slide down the navbar
-    var prevScollLoc = window.pageYOffset;
-    window.onscroll = function() {
-      
-      var currScrollLoc = window.pageYOffset;
-      if (prevScrollLoc > currScrollLoc) {
-          document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-10px";
-      }
+   // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
 
-      prevScollLoc =currScrollLoc;
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "-50px";
+      } else {
+        document.getElementById("navbar").style.top = "0";
+      }
     }
-  </script> -->
+  </script>

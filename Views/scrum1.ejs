@@ -10,6 +10,11 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link href="/common.css" rel="stylesheet" type="text/css" />
     <link href="/fetchDetails.css" rel="stylesheet" type="text/css" />
     <link href="/footer.css" rel="stylesheet" type="text/css" />
@@ -18,28 +23,35 @@
   <body class="">
     <%- include('./common') %>
     <div class="container-fluid">
-      <div class="row1" align="center">
+      <div class="row1" align-items="center">
         <marquee scrollamount="10">
-          <img src="cdxlogo.png" width="500px" border="5" bordercolor="white" />
-          <img src="img1.jpg" width="500px" border="5" bordercolor="white" />
-          <img src="img2.jpg" width="500px" border="5" bordercolor="white" />
-          <img src="img3.jpg" width="500px" border="5" bordercolor="white" />
-          <img src="img4.jpeg" width="500px" border="5" bordercolor="white" />
-          <img src="img5.jpg" width="500px" border="5" bordercolor="white" />
+          <img
+            src="cdxlogo.png"
+            width="500px"
+            style="border: 5px solid white"
+          />
+          <img src="img1.jpg" width="500px" style="border: 5px solid white" />
+          <img src="img2.jpg" width="500px" style="border: 5px solid white" />
+          <img src="img3.jpg" width="500px" style="border: 5px solid white" />
+          <img src="img4.jpeg" width="500px" style="border: 5px solid white" />
+          <img src="img5.jpg" width="500px" style="border: 5px solid white" />
         </marquee>
       </div>
       <div class="row">
         <div class="col-sm-3">
           <!--div id="first"-->
-          <div class="first card">
+          <div id="unchecked" class="first card">
             <div class="title">
+              <div id="unchecked">
+                <button class="add" onclick="newCard()">+</button>
+              </div>
               <h3>Unchecked</h3>
             </div>
-            <ul style="padding-left: 0px">
+            <ul id="scrumCard" style="padding-left: 0px">
               <!---->
               <li>
                 <form
-                  align="center"
+                  text-align="center"
                   id="student_details"
                   action="/insertData"
                   method="POST"
@@ -116,30 +128,67 @@
                 </form>
               </li>
             </ul>
+            <div class="unchecked" style="overflow: auto"></div>
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="second card">
+          <div id="inProgress" class="second card">
             <div class="title">
+              <div id="inProgress">
+                <button class="add" onclick="newCard()">+</button>
+              </div>
               <h3>In progress</h3>
             </div>
+            <div class="inProgress" style="overflow: auto"></div>
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="second card">
+          <div id="checked" class="second card">
             <div class="title">
+              <div id="checked">
+                <button class="add" onclick="newCard()">+</button>
+              </div>
               <h3>Checked</h3>
             </div>
+            <div class="checked" style="overflow: auto"></div>
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="second card">
+          <div id="members" class="second card">
             <div class="title">
+              <div id="members">
+                <button class="add" onclick="newCard()">+</button>
+              </div>
               <h3>Members</h3>
             </div>
+            <div class="members" style="overflow: auto"></div>
           </div>
         </div>
       </div>
     </div>
 
     <%- include('footer')%>
+    <script>
+      // document.querySelector(".add").addEventListener("click", event=>{
+      //   console.log("clicked")
+      //   console.log(event.target.parentNode.id)
+      //   let parent = document.querySelector("."+event.target.parentNode.id)
+      //   let scrumCard = document.querySelector("#scrumCard").cloneNode(true)
+      //   //scrumCard.style.position="absolute"
+      //   parent.appendChild(scrumCard)
+      //   //scrumCard.scrollIntoView()
+      // })
+      function newCard() {
+        console.log("clicked");
+        console.log(event.target.parentNode.id);
+        let parent = document.querySelector("." + event.target.parentNode.id);
+        let scrumCard = document.querySelector("#scrumCard").cloneNode(true);
+        //scrumCard.style.position="absolute"
+        parent.appendChild(scrumCard);
+        //scrumCard.scrollIntoView()
+        let elem = document.querySelector("#" + event.target.parentNode.id);
+        elem.scrollTop = elem.scrollHeight;
+      }
+    </script>
+  </body>
+</html>
