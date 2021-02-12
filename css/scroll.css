@@ -1,0 +1,30 @@
+/*Scroll to Top btn text*/
+#topBtn-p {
+  position: fixed;
+  bottom: 200px;
+  right: 56px;
+  padding-bottom: 20px;
+  writing-mode: vertical-rl;
+  display: inline;
+  word-spacing: 2px;
+  letter-spacing: 1.2px;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+}
+/*Scroll to Top btn text Ends here*/
+
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #f00946;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  outline: none;
+}

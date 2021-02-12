@@ -13,6 +13,7 @@
     <link href="/features.css" rel="stylesheet" type="text/css" />
     <link href="/Contact.css" rel="stylesheet" type="text/css" />
     <link href="/footer.css" rel="stylesheet" type="text/css" />
+    <link href="/scroll.css" rel="stylesheet" type="text/css" />
     <!-- Font-Awesome cdn -->
     <link
       rel="stylesheet"
@@ -262,6 +263,12 @@
   </div>
   <!--Contact ENDS here-->
 
+  <!--Scrollbtn text-->
+  <!-- <p id="topBtn-p">Back to Top</p>
+  <div class="btr-float">
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+  </div> -->
+
 
 
     <script>
@@ -288,6 +295,37 @@
         z.style.left = "0px";
       }
     </script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      //for scroll to top button
+      $(document).ready(function(){
+
+      $(window).scroll(function(){
+          if($(this).scrollTop() > 1000){
+              $('#topBtn').fadeIn();
+          } else {
+              $('#topBtn').fadeOut();
+          }
+      });
+
+      $("#topBtn").click(function(){
+          $('html ,body').animate({scrollTop : 0},1000);
+      });
+      });
+
+      //for vertical text (BACK TO TOP)
+      $(document).ready(function(){
+
+      $(window).scroll(function(){
+          if($(this).scrollTop() > 1500){
+              $('#topBtn-p').fadeIn();
+          } else {
+              $('#topBtn-p').fadeOut();
+          }
+      });
+      });
+    </script> -->
 
     <!-- TO ADD FOOTER just remove the below two tags </body> and </html> and then uncomment the below code -->
     <%- include('footer')%>
