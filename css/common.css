@@ -227,6 +227,7 @@ body {
   z-index: 1;
   color: black;
   position: fixed;
+  margin-top: 10px;
   top: 0;
   height: 18vh;
   width: 100%;
