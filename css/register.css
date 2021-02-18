@@ -44,7 +44,8 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0rem 5rem;
+  margin-top: 100px;
+  padding-bottom: 40px;
   transition: all 0.2s 0.7s;
   overflow: hidden;
   grid-column: 1 / 2;
@@ -58,6 +59,7 @@ form.sign-up-form {
 
 form.sign-in-form {
   z-index: 2;
+
 }
 
 .title {
