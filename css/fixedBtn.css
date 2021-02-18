@@ -1,0 +1,55 @@
+/*Fixed buttons at right side*/
+#fixed-Btn {
+  position: fixed;
+  top: 27%;
+  right: 0%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+#fixed-Btn a {
+  background: transparent;
+  cursor: pointer;
+  width: 80px;
+  height: 65px;
+  font-size: 26px;
+  background-color: #11111180;
+  border: 0px solid #11111180;
+  margin-top: 1px;
+  transition: all 0.3s;
+}
+
+#fixed-Btn a i {
+  color: white;
+  font-size: 20px;
+  padding-top: 25px;
+  padding-left: 29px;
+}
+
+#fixed-Btn a:hover {
+  background-color: #00000080;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #fbt {
+  color: #3b5998;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #igt {
+  color: #e1306c;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #ght {
+  color: white;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #lkt {
+  color: #0e76a8;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #ytt {
+  color: #ff0000;
+  transition: all 0.3s;
+}
+/*Fixed Buttons End here*/
