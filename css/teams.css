@@ -1,0 +1,353 @@
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  /* background: rgb(17, 17, 17); */
+  background: whitesmoke;
+}
+.pimg1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background1.jpg);
+  min-height: 100%;
+}
+
+.pimg1,
+.pimg2 {
+  position: relative;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-attachment: fixed;
+}
+
+/*Team text and Camera Picture*/
+#dark {
+  background-color: rgb(17, 17, 17);
+}
+
+.row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-right: 0px !important;
+  margin-left: -15px !important;
+}
+
+#row1 {
+  padding-top: 16%;
+  /* padding-left: 5%; */
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+#row1 .col-lg-12 .display-1 {
+  color: #f4f4f4;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+#row1 .col-lg-12 .display-1 span {
+  letter-spacing: 15px;
+}
+/*Team Home page Ends here*/
+
+/*Mountain.png file at the bottom of starting Page*/
+.top-section-mountains {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+}
+.top-section-mountains img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0%;
+}
+
+.content-header {
+  font-family: Satisfy;
+  font-size: 50px;
+  text-align: center;
+  color: #f00946;
+
+  padding-top: 90px;
+}
+
+/* hr tag Gradient transparent - color - transparent */
+
+hr.style-two {
+  border: 0;
+  height: 1.25px;
+  background-image: linear-gradient(
+    to right,
+    rgba(252, 79, 2, 0),
+    #f00946,
+    rgba(252, 79, 2, 0)
+  );
+  max-width: 45%;
+  transform: translateX(450px);
+}
+
+/*Content & Header Portion*/
+.content-tag {
+  font-family: Satisfy;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 90px;
+  color: rgba(252, 252, 252, 0.8);
+}
+
+/*Picture Portion*/
+.cunt {
+  margin-top: 40px;
+  position: relative;
+  width: 18vw !important;
+  height: 36vh;
+
+  justify-content: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background: linear-gradient(60deg, #f00946 0%, #f00 100%);
+}
+
+.overlay {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #11111180;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cunt:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.name {
+  text-align: center;
+  font-size: 18px;
+  color: #f00946;
+  padding-top: 20px;
+}
+
+.name .post {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(252, 252, 252, 0.6) !important;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cunt {
+    margin-top: 40px;
+    position: relative;
+    width: 20vw !important;
+    height: 30vh;
+
+    justify-content: center;
+  }
+
+  hr.style-two {
+    transform: translateX(250px);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .cunt {
+    margin-top: 40px;
+    position: relative;
+    width: 31vw !important;
+    height: 30vh;
+
+    justify-content: center;
+  }
+
+  hr.style-two {
+    transform: translateX(180px);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .cunt {
+    margin-top: 40px;
+    position: relative;
+    width: 54vw !important;
+    height: 22vh;
+
+    justify-content: center;
+  }
+
+  hr.style-two {
+    transform: translateX(120px);
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cunt {
+    margin-top: 40px;
+    position: relative;
+    width: 62vw !important;
+    height: 30vh;
+
+    justify-content: center;
+  }
+}
+
+/*Fixed buttons at right side*/
+#fixed-Btn {
+  position: fixed;
+  top: 27%;
+  right: -43.7%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+#fixed-Btn a {
+  background: transparent;
+  cursor: pointer;
+  width: 80px;
+  height: 65px;
+  font-size: 26px;
+  background-color: #11111180;
+  border: 0px solid #11111180;
+  margin-top: 1px;
+  transition: all 0.3s;
+}
+
+#fixed-Btn a i {
+  color: white;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-left: 29px;
+}
+
+#fixed-Btn a:hover {
+  background-color: #00000080;
+  margin-right: 15px;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #fbt {
+  color: #3b5998;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #igt {
+  color: #e1306c;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #ght {
+  color: white;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #lkt {
+  color: #0e76a8;
+  transition: all 0.3s;
+}
+#fixed-Btn a:hover #ytt {
+  color: #ff0000;
+  transition: all 0.3s;
+}
+/*Fixed Buttons End here*/
+
+@media screen and (max-width: 1200px) {
+  #fixed-Btn {
+    position: fixed;
+    top: 27%;
+    right: -42%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #fixed-Btn {
+    position: fixed;
+    top: 27%;
+    right: -88%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 670px) {
+  #fixed-Btn {
+    position: fixed;
+    top: 27%;
+    right: -86%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 470px) {
+  #fixed-Btn {
+    position: fixed;
+    top: 27%;
+    right: -74%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #row1 {
+    padding-top: 52%;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+  }
+
+  #row1 .col-lg-12 .display-1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #fixed-Btn {
+    position: fixed;
+    top: 27%;
+    right: -77%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #row1 .col-lg-12 .display-1 {
+    font-size: 35px;
+  }
+}
