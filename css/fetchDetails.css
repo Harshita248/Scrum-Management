@@ -13,14 +13,21 @@ img {
   margin: 120px 50px 20px 50px;
 }
 
-.first {
+.card {
+  height: 550px;
   background-color: currentColor;
   border: 2px solid white;
-  height: 550px;
-  /*width: 250px;*/
   overflow: auto;
-  /*float: left;*/
+  box-shadow: 2px 2px 20px #fff;
+  border-radius: 10px;
+  margin: 2%;
+  height: fit-content;
+  padding-right: 0px;
+  padding-left: 0px;
+  animation: cardanimate 1s 0.5s 1;
+  position: absolute;
 }
+
 
 .title {
   text-align: center;
@@ -39,7 +46,6 @@ img {
 .inProgress, .checked, .members, .unchecked{
  overflow: auto ;
 }
-
 .add{
  width: 20px;
  height: 20px;
@@ -54,24 +60,6 @@ img {
   right: 0%; 
   color: black;
  }
-
-.second {
-  /*            width: 250px;*/
-  height: 550px;
-  background-color: currentColor;
-  border: 2px solid white;
-  overflow: auto;
-}
-
-.card {
-  /*    width: 20%;*/
-  /*    display: inline-block;*/
-  box-shadow: 2px 2px 20px #fff;
-  border-radius: 10px;
-  margin: 2%;
-  padding-right: 0px;
-  padding-left: 0px;
-}
 
 input {
   width: 80%;
@@ -113,8 +101,6 @@ h1 {
   background-clip: padding-box;
   text-align: center;
 }
-
-
 
 /* If it will be uncommented then there will be a box on the display of name*/
   .button1 {
@@ -179,6 +165,17 @@ h1 {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+@keyframes cardanimate{
+  0%{
+    opacity: 0;
+    left: -100px;
+  }
+  100%{
+    opacity: 1;
+    left: 0px;
+  }
 }
 
 @media screen and (max-width: 700px) {
