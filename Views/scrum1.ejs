@@ -21,7 +21,8 @@
   </head>
 
   <body class="">
-    <%- include('./common') %>
+    <%- include('./loader') %>
+    <%- include('./navbar') %>
     <div class="container-fluid">
       <div class="row1" align-items="center">
         <marquee scrollamount="10">
@@ -50,6 +51,7 @@
             <ul id="scrumCard" style="padding-left: 0px">
               <!---->
               <li>
+                <center>
                 <form
                   text-align="center"
                   id="student_details"
@@ -126,13 +128,14 @@
                     Submit
                   </button>
                 </form>
+              </center>
               </li>
             </ul>
             <div class="unchecked" style="overflow: auto"></div>
           </div>
         </div>
         <div class="col-sm-3">
-          <div id="inProgress" class="second card">
+          <div id="inProgress" class=" second card">
             <div class="title">
               <div id="inProgress">
                 <button class="add" onclick="newCard()">+</button>
@@ -143,7 +146,7 @@
           </div>
         </div>
         <div class="col-sm-3">
-          <div id="checked" class="second card">
+          <div id="checked" class="third card">
             <div class="title">
               <div id="checked">
                 <button class="add" onclick="newCard()">+</button>
@@ -154,7 +157,7 @@
           </div>
         </div>
         <div class="col-sm-3">
-          <div id="members" class="second card">
+          <div id="members" class="fourth card">
             <div class="title">
               <div id="members">
                 <button class="add" onclick="newCard()">+</button>
@@ -166,7 +169,6 @@
         </div>
       </div>
     </div>
-
     <%- include('footer')%>
     <script>
       // document.querySelector(".add").addEventListener("click", event=>{
@@ -189,6 +191,7 @@
         let elem = document.querySelector("#" + event.target.parentNode.id);
         elem.scrollTop = elem.scrollHeight;
       }
+      
     </script>
   </body>
 </html>
