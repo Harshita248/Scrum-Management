@@ -174,6 +174,7 @@ app.get('/', (req, res) => res.render ('index'));
 app.get('/student', (req, res) => res.render ('scrum1'));
 app.get('/fetch_details', (req, res) => res.render('fetch_details'));
 app.get('/regadm', (req, res) => res.render('registeradm'));
+app.get('/teamsPage', (req, res) => res.render('teams'));
 
 /*app.listen (port, () => {
   console.log ('server listening on port ' + port);
