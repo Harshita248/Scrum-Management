@@ -16,7 +16,7 @@ Achieving maximum throughout is the main goal by determining bottlenecks in the 
 In other words, a Kanban board only shows the next few stories that need to be completed and it's current state of progress. 
 The stories are determined by your project's backlog and the state of any story is changed as you drag the story across any state.
 
-You can view the web-version of this project. The link for reference is https://jyotsana3108.github.io/Scrum-Management/
+
  ### This project is under SWOC (Script Winter Of Code) open source program .🎉🎊
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
